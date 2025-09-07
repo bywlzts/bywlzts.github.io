@@ -18,7 +18,7 @@ For collaborations or inquiries, please feel free to contact me via email.
 
 
 # 🚀 News
-- *09/2025*: &nbsp; One paper about LLIE (Fourier) accepted to ESWA.
+- *09/2025*: &nbsp; One paper about LLIE (Fourier & MoE) accepted to ESWA.
 - *07/2025*: &nbsp; One paper about LLIE (Causal Wavelet) accepted to ICCV 2025.
 - *06/2025*: &nbsp; One paper about LLIE (Multi-modal Fusion) accepted to ESWA.
 - *05/2025*: &nbsp; One paper about LLIE (Retinex) accepted to INFFUS.
