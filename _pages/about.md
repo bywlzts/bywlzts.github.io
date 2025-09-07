@@ -95,7 +95,7 @@ For collaborations or inquiries, please feel free to contact me via email.
 
 ---
 
-APMoE-Net: Fourier Amplitude-PhaseJoint Enhancement and MoE Compensation forLow-Light lmage Enhancement (ESWA IF=8.5), 2025
+*APMoE-Net: Fourier Amplitude-Phase Joint Enhancement and MoE Compensation for Low-Light lmage Enhancement (ESWA IF=8.5), 2025*
 
 Mengen Cai, **Tongshun Zhang †**, Pingping Liu*, Qiuzhan Zhou
 
