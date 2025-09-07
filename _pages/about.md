@@ -18,6 +18,7 @@ For collaborations or inquiries, please feel free to contact me via email.
 
 
 # 🚀 News
+- *09/2025*: &nbsp; One paper about LLIE (Fourier) accepted to ESWA.
 - *07/2025*: &nbsp; One paper about LLIE (Causal Wavelet) accepted to ICCV 2025.
 - *06/2025*: &nbsp; One paper about LLIE (Multi-modal Fusion) accepted to ESWA.
 - *05/2025*: &nbsp; One paper about LLIE (Retinex) accepted to INFFUS.
@@ -26,7 +27,8 @@ For collaborations or inquiries, please feel free to contact me via email.
 
 # 📚 Selected Publications <!-- {#publications} -->
 
-
+\* and † denote a corresponding author and an equal-contribution author, respectively.
+  
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Arxiv 2025</div><img src='images/SPJFNet.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
@@ -92,6 +94,13 @@ For collaborations or inquiries, please feel free to contact me via email.
 **Tongshun Zhang**, Pingping Liu*, Mengen Cai, Xiaoyi Wang, Qiuzhan Zhou
 
 ---
+
+APMoE-Net: Fourier Amplitude-PhaseJoint Enhancement and MoE Compensation forLow-Light lmage Enhancement (ESWA IF=8.5), 2025
+
+Mengen Cai, **Tongshun Zhang †**, Pingping Liu*, Qiuzhan Zhou
+
+---
+
 
 *WEC-DG: Multi-Exposure Wavelet Correction Method Guided by Degradation Description (Arxiv), 2025* [[PDF]](https://arxiv.org/pdf/2508.09565)
 
