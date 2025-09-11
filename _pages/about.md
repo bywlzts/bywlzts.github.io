@@ -137,6 +137,7 @@ Pingping Liu*, Tianqi Li, Qiuzhan Zhou, **Tongshun Zhang**
 - 一种低光图像增强方法、系统、设备以及存储介质 (CN120374475A) 2025 刘萍萍; 王晓艺; **张同顺**; 尹莉媛; 周求湛; 侯建华
 
 # 🏆 Awards & Achievements
+- [09/2025] China FAW Group Scholarship (中国一汽奖学金，University-level)
 - [04/2025] DMFourLLIE was selected for poster presentation at Valse 2025. [Link](https://valser.org/2025/#/poster)
 - [11/2024] DMFourLLIE was selected for the "Academic Research and Discussion (研学论道)" report at Jilin University.
 - [10/2024] Graduate Outstanding Scholarship (研究生优秀奖学金)
