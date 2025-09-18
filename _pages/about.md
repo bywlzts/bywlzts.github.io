@@ -18,7 +18,7 @@ For collaborations or inquiries, please feel free to contact me via email.
 
 
 # 🚀 News
-- *09/2025*: &nbsp; One paper about LLIE (Fourier & MoE) accepted to ESWA.
+- *09/2025*: &nbsp; Two paper about LLIE (Fourier & MoE, Unsupervised Retinex-based) accepted to ESWA.
 - *07/2025*: &nbsp; One paper about LLIE (Causal Wavelet) accepted to ICCV 2025.
 - *06/2025*: &nbsp; One paper about LLIE (Multi-modal Fusion) accepted to ESWA.
 - *05/2025*: &nbsp; One paper about LLIE (Retinex) accepted to INFFUS.
@@ -101,6 +101,12 @@ Mengen Cai, **Tongshun Zhang †**, Pingping Liu*, Qiuzhan Zhou
 
 ---
 
+*Differentiable histogram-guided unsupervised Retinex enhancement for paired low-light images (ESWA IF=8.5), 2025* [[Code]](https://github.com/yoonyin/DHURE-main)
+
+Liyuan Yin, Pingping Liu*, **Tongshun Zhang**, Hongwei Zhao, Qiuzhan Zhou
+
+---
+
 
 *WEC-DG: Multi-Exposure Wavelet Correction Method Guided by Degradation Description (Arxiv), 2025* [[PDF]](https://arxiv.org/pdf/2508.09565)
 
@@ -137,8 +143,10 @@ Pingping Liu*, Tianqi Li, Qiuzhan Zhou, **Tongshun Zhang**
 - 一种低光图像增强方法、系统、设备以及存储介质 (CN120374475A) 2025 刘萍萍; 王晓艺; **张同顺**; 尹莉媛; 周求湛; 侯建华
 
 # 🏆 Awards & Achievements
+- [09/2025] 2024-2025 Graduate Outstanding Scholarship (研究生优秀奖学金)
+- [09/2025] 2024-2025 Outstanding Graduate Students (优秀研究生)
 - [09/2025] China FAW Group Scholarship (中国一汽奖学金，University-level)
 - [04/2025] DMFourLLIE was selected for poster presentation at Valse 2025. [Link](https://valser.org/2025/#/poster)
 - [11/2024] DMFourLLIE was selected for the "Academic Research and Discussion (研学论道)" report at Jilin University.
-- [10/2024] Graduate Outstanding Scholarship (研究生优秀奖学金)
-- [10/2024] Outstanding Graduate Students (优秀研究生)
+- [10/2024] 2023-2024 Graduate Outstanding Scholarship (研究生优秀奖学金)
+- [10/2024] 2023-2024 Outstanding Graduate Students (优秀研究生)
