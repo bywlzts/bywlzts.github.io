@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-# 🎓 About Me
+#  About Me
 
 I am currently pursuing a Ph.D. in the College of Computer Science and Technology at Jilin University (09/2023–present), supervised by Professor [Pingping Liu (刘萍萍)](http://ccst.jlu.edu.cn/info/1367/20528.htm). Previously, I obtained my M.S. degree from Tiangong University (09/2018–03/2021) under Professor [Yuelong Li (李月龙)](https://ai.tiangong.edu.cn/2024/0515/c5230a94772/page.htm) and served as an Algorithm Engineer at Uniview Technologies. (04/2021–06/2023).  
  
@@ -17,7 +17,7 @@ My primary research focuses on **Low-Level Vision**, particularly **Low-Light Im
 For collaborations or inquiries, please feel free to contact me via email.
 
 
-# 🚀 News
+#  News
 - *09/2025*: &nbsp; Two paper about LLIE (Fourier & MoE, Unsupervised Retinex-based) accepted to ESWA.
 - *07/2025*: &nbsp; One paper about LLIE (Causal Wavelet) accepted to ICCV 2025.
 - *06/2025*: &nbsp; One paper about LLIE (Multi-modal Fusion) accepted to ESWA.
@@ -25,7 +25,7 @@ For collaborations or inquiries, please feel free to contact me via email.
 - *03/2025*: &nbsp; One paper about LLIE (Fourier & Reinforcement Learning) accepted to ICME 2025 (Oral).
 - *07/2024*: &nbsp; One paper about LLIE (Fourier) accepted to ACM MM 2024 (Oral). 
 
-# 📚 Selected Publications <!-- {#publications} -->
+#  Selected Publications <!-- {#publications} -->
 
 \* and † denote a corresponding author and an equal-contribution author, respectively.
   
@@ -131,18 +131,21 @@ Pingping Liu*, Xiaoyi Wang, **Tongshun Zhang**, Liyuan Yin
 Pingping Liu*, Tianqi Li, Qiuzhan Zhou, **Tongshun Zhang**
 
 
-# 🤝 Reviewer
+#  Reviewer
 - AAAI Conference on Artificial Intelligence (AAAI)
 - ACM International Conference on Multimedia (ACM MM)
 - IEEE Transactions on Multimedia (TMM)
+- IEEE Transactions on Image Processing (TIP)
 
-# 🩺 Patents
+#  Patents
 - 无监督曝光矫正的曝光偏差增强网络模型构建方法、系统 （CN120318103B）2025 刘萍萍;尹莉媛;**张同顺**;王晓艺;周求湛
 - 一种低光图像增强方法、系统、设备以及存储介质 （CN119090751B）2025 刘萍萍;李天奇;周求湛;**张同顺**;卢禹冰
 - 一种低光图像增强方法及系统 （CN119379551B）2025 刘萍萍;**张同顺**;蔡蒙恩;张哲;王晓艺;周求湛
 - 一种低光图像增强方法、系统、设备以及存储介质 (CN120374475A) 2025 刘萍萍; 王晓艺; **张同顺**; 尹莉媛; 周求湛; 侯建华
+- 基于Retinex约束下的生成式结构低照度图像增强方法 (CN120495108A) 2025 	周求湛;杨迪;武慧南;**张同顺**;王聪;刘萍萍
 
-# 🏆 Awards & Achievements
+#  Awards & Achievements
+- [09/2025] I was invited to give a lecture at Xiangnan University, and this is my first lecture.
 - [09/2025] 2024-2025 Graduate Outstanding Scholarship (研究生优秀奖学金)
 - [09/2025] 2024-2025 Outstanding Graduate Students (优秀研究生)
 - [09/2025] China FAW Group Scholarship (中国一汽奖学金，University-level)
