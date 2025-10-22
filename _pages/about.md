@@ -145,10 +145,11 @@ Pingping Liu*, Tianqi Li, Qiuzhan Zhou, **Tongshun Zhang**
 - 基于Retinex约束下的生成式结构低照度图像增强方法 (CN120495108A) 2025 	周求湛;杨迪;武慧南;**张同顺**;王聪;刘萍萍
 
 #  Awards & Achievements
+- [10/2025] National Scholarship (国家奖学金)
 - [09/2025] I was invited to give a lecture at Xiangnan University, focusing on lightweight reconstruction for low-light enhancement.
 - [09/2025] 2024-2025 Graduate Outstanding Scholarship (研究生优秀奖学金)
 - [09/2025] 2024-2025 Outstanding Graduate Students (优秀研究生)
-- [09/2025] China FAW Group Scholarship (中国一汽奖学金，University-level)
+- [09/2025] China FAW Group Scholarship (中国一汽奖学金)
 - [04/2025] DMFourLLIE was selected for poster presentation at Valse 2025. [Link](https://valser.org/2025/#/poster)
 - [11/2024] DMFourLLIE was selected for the "Academic Research and Discussion (研学论道)" report at Jilin University.
 - [10/2024] 2023-2024 Graduate Outstanding Scholarship (研究生优秀奖学金)
