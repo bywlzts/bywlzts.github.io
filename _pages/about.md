@@ -18,7 +18,7 @@ For collaborations or inquiries, please feel free to contact me via email.
 
 
 #  News
-- *11/2025*: &nbsp; Two paper about LLIE (Frequency & Mamba) accepted to AAAI 2026.
+- *11/2025*: &nbsp; Two paper about LLIE (Frequency Fusion, Frequency & Mamba) accepted to AAAI 2026.
 - *09/2025*: &nbsp; Two paper about LLIE (Fourier & MoE, Unsupervised Retinex-based) accepted to ESWA.
 - *07/2025*: &nbsp; One paper about LLIE (Causal Wavelet) accepted to ICCV 2025.
 - *06/2025*: &nbsp; One paper about LLIE (Multi-modal Fusion) accepted to ESWA.
