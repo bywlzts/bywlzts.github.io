@@ -30,7 +30,7 @@ For collaborations or inquiries, please feel free to contact me via email.
 
 \* and † denote a corresponding author and an equal-contribution author, respectively.
   
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Arxiv 2025</div><img src='images/SPJFNet.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">AAAI 2026</div><img src='images/SPJFNet.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 *SPJFNet: Self-Mining Prior-Guided Joint Frequency Enhancement for Ultra-Efficient Dark Image Restoration* [[PDF]](https://arxiv.org/abs/2508.04041) [[Code]](https://github.com/bywlzts/SPJFNet)
@@ -50,7 +50,7 @@ For collaborations or inquiries, please feel free to contact me via email.
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Arxiv 2025</div><img src='images/PatchSS2D.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">AAAI 2026</div><img src='images/PatchSS2D.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 *Beyond Illumination: Fine-Grained Detail Preservation in Extreme Dark Image Restoration* [[PDF]](https://arxiv.org/abs/2508.03336) [[Code]](https://github.com/bywlzts/RFGM)
