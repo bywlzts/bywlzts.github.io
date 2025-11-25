@@ -138,6 +138,7 @@ Pingping Liu*, Tianqi Li, Qiuzhan Zhou, **Tongshun Zhang**
 - IEEE Transactions on Multimedia (TMM)
 - IEEE Transactions on Image Processing (TIP)
 - IEEE Transactions on Circuits and Systems for Video Technology (TCSVT)
+- Computer Vision and Image Understanding (CVIU)
 
 #  Patents
 - 无监督曝光矫正的曝光偏差增强网络模型构建方法、系统 （CN120318103B）2025 刘萍萍;尹莉媛;**张同顺**;王晓艺;周求湛
