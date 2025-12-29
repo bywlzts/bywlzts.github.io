@@ -26,7 +26,7 @@ For collaborations or inquiries, please feel free to contact me via email.
 - *03/2025*: &nbsp; One paper about LLIE (Fourier & Reinforcement Learning) accepted to ICME 2025 (Oral).
 - *07/2024*: &nbsp; One paper about LLIE (Fourier) accepted to ACM MM 2024 (Oral). 
 
-#  Selected Publications <!-- {#publications} -->
+#  Publications <!-- {#publications} -->
 
 *SPJFNet: Self-Mining Prior-Guided Joint Frequency Enhancement for Ultra-Efficient Dark Image Restoration  (AAAI, Poster) 2026* [[PDF]](https://arxiv.org/abs/2508.04041) [[Code]](https://github.com/bywlzts/SPJFNet)
 
