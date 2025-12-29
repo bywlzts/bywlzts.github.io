@@ -80,15 +80,11 @@ For collaborations or inquiries, please feel free to contact me via email.
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ACM MM 2024</div><img src='images/DMFourLLIE.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-*DMFourLLIE: Dual-Stage and Multi-Branch Fourier Network for Low-Light Image Enhancement* [[PDF]](https://arxiv.org/abs/2412.00683) [[Code]](https://github.com/bywlzts/DMFourLLIE)
+*DMFourLLIE: Dual-Stage and Multi-Branch Fourier Network for Low-Light Image Enhancement  (ACM MM, Oral), 2024* [[PDF]](https://arxiv.org/abs/2412.00683) [[Code]](https://github.com/bywlzts/DMFourLLIE)
 
 **Tongshun Zhang**, Pingping Liu*, Ming Zhao, Haotian Lv
 
-</div>
-</div>
+---
 
 *Cross-modal guided and refinement-enhanced Retinex network for robust low-light image enhancement (INFFUS IF=18.6), 2025* [[PDF]](https://www.sciencedirect.com/science/article/abs/pii/S1566253525004531) [[Code]](https://github.com/bywlzts/CMRetinexNet)
 
@@ -102,7 +98,19 @@ Mengen Cai, **Tongshun Zhang †**, Pingping Liu*, Qiuzhan Zhou
 
 ---
 
-*Differentiable histogram-guided unsupervised Retinex enhancement for paired low-light images (ESWA IF=8.5), 2025* [[Code]](https://github.com/yoonyin/DHURE-main)
+*Physics-Driven Feature Decoupling for Infrared Small Targets: A Dual Geometry-Guided Experts Network (KBS IF=8.8), 2025*
+
+Yubing Lu, Pingping Liu*, **Tongshun Zhang**, Aohua Li, Qiuzhan Zhou
+
+---
+
+*Synergistic Mamba: Mastering Global Frequency and Local Spatial Contexts for Low-light image Enhancement (ESWA IF=8.5), 2025*  [[PDF]](https://www.sciencedirect.com/science/article/pii/S0957417425045610) [[Code]](https://github.com/cookfu/Synergistic_Mamba.git)
+
+Shijun Fu, Pingping Liu*, **Tongshun Zhang**, Hongwei Zhao, Qiuzhan Zhou
+
+---
+
+*Differentiable histogram-guided unsupervised Retinex enhancement for paired low-light images (ESWA IF=8.5), 2025* [[PDF]](https://www.sciencedirect.com/science/article/abs/pii/S0957417425033974) [[Code]](https://github.com/yoonyin/DHURE-main)
 
 Liyuan Yin, Pingping Liu*, **Tongshun Zhang**, Hongwei Zhao, Qiuzhan Zhou
 
