@@ -28,57 +28,35 @@ For collaborations or inquiries, please feel free to contact me via email.
 
 #  Selected Publications <!-- {#publications} -->
 
-\* and † denote a corresponding author and an equal-contribution author, respectively.
-  
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">AAAI 2026</div><img src='images/SPJFNet.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-*SPJFNet: Self-Mining Prior-Guided Joint Frequency Enhancement for Ultra-Efficient Dark Image Restoration* [[PDF]](https://arxiv.org/abs/2508.04041) [[Code]](https://github.com/bywlzts/SPJFNet)
+*SPJFNet: Self-Mining Prior-Guided Joint Frequency Enhancement for Ultra-Efficient Dark Image Restoration  (AAAI, Poster) 2026* [[PDF]](https://arxiv.org/abs/2508.04041) [[Code]](https://github.com/bywlzts/SPJFNet)
 
 **Tongshun Zhang**, Pingping Liu*, Zijian Zhang, Qiuzhan Zhou
 
-</div>
-</div>
+---
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Arxiv 2025</div><img src='images/CIVQLLIE.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-*CIVQLLIE: Causal Intervention with Vector Quantization for Low-Light Image Enhancement* [[PDF]](https://arxiv.org/abs/2508.03338) [[Code]](https://github.com/bywlzts/CIVQLLIE)
+*CIVQLLIE: Causal Intervention with Vector Quantization for Low-Light Image Enhancement  (Arxiv), 2025* [[PDF]](https://arxiv.org/abs/2508.03338) [[Code]](https://github.com/bywlzts/CIVQLLIE)
 
 **Tongshun Zhang**, Pingping Liu*, Zhe Zhang, Qiuzhan Zhou
 
-</div>
-</div>
+---
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">AAAI 2026</div><img src='images/PatchSS2D.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-*Beyond Illumination: Fine-Grained Detail Preservation in Extreme Dark Image Restoration* [[PDF]](https://arxiv.org/abs/2508.03336) [[Code]](https://github.com/bywlzts/RFGM)
+*Beyond Illumination: Fine-Grained Detail Preservation in Extreme Dark Image Restoration (AAAI, Poster) 2026* [[PDF]](https://arxiv.org/abs/2508.03336) [[Code]](https://github.com/bywlzts/RFGM)
 
 **Tongshun Zhang**, Pingping Liu*, Zixuan Zhong, Zijian Zhang, Qiuzhan Zhou
 
-</div>
-</div>
+---
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Arxiv 2025</div><img src='images/BSMamba.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-*BSMamba: Brightness and Semantic Modeling for Long-Range Interaction in Low-Light Image Enhancement* [[PDF]](https://arxiv.org/abs/2506.18346) [[Code]](https://github.com/bywlzts/BSMamba)
+*BSMamba: Brightness and Semantic Modeling for Long-Range Interaction in Low-Light Image Enhancement (Arxiv), 2025* [[PDF]](https://arxiv.org/abs/2506.18346) [[Code]](https://github.com/bywlzts/BSMamba)
 
 **Tongshun Zhang**, Pingping Liu*, Mengen Cai, Zijian Zhang, Yubing Lu, Qiuzhan Zhou
 
-</div>
-</div>
+---
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICCV 2025</div><img src='images/CWNet.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-*CWNet: Causal Wavelet Network for Low-Light Image Enhancement* [[PDF]](https://arxiv.org/abs/2507.10689) [[Code]](https://github.com/bywlzts/CWNet-Causal-Wavelet-Network)
+*CWNet: Causal Wavelet Network for Low-Light Image Enhancement (ICCV, Poster), 2025* [[PDF]](https://arxiv.org/abs/2507.10689) [[Code]](https://github.com/bywlzts/CWNet-Causal-Wavelet-Network)
 
 **Tongshun Zhang**, Pingping Liu*, Yubing Lu, Mengen Cai, Zijian Zhang, Zhe Zhang, Qiuzhan Zhou
 
-</div>
-</div>
+---
 
 *DMFourLLIE: Dual-Stage and Multi-Branch Fourier Network for Low-Light Image Enhancement  (ACM MM, Oral), 2024* [[PDF]](https://arxiv.org/abs/2412.00683) [[Code]](https://github.com/bywlzts/DMFourLLIE)
 
