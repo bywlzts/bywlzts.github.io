@@ -28,21 +28,33 @@ For collaborations or inquiries, please feel free to contact me via email.
 
 #  Publications <!-- {#publications} -->
 
+*A Physically-Grounded Attack and Adaptive Defense Framework for Real-World Low-Light Image Enhancement  (Arxiv) 2026*
+
+**Tongshun Zhang**, Pingping Liu*, Yuqing Lei, Zixuan Zhong, Qiuzhan Zhou, Zhiyuan Zha
+
+---
+
+*SpineBench: A Clinically Salient, Level-Aware Benchmark Powered by the SpineMed-450k Corpus  (ICLR, Poster) 2026* [[PDF]](https://arxiv.org/abs/2510.03160)
+
+Ming Zhao, Pingping Liu*, **Tongshun Zhang**, et al.
+
+---
+
 *SPJFNet: Self-Mining Prior-Guided Joint Frequency Enhancement for Ultra-Efficient Dark Image Restoration  (AAAI, Poster) 2026* [[PDF]](https://arxiv.org/abs/2508.04041) [[Code]](https://github.com/bywlzts/SPJFNet)
 
 **Tongshun Zhang**, Pingping Liu*, Zijian Zhang, Qiuzhan Zhou
 
 ---
 
-*CIVQLLIE: Causal Intervention with Vector Quantization for Low-Light Image Enhancement  (Arxiv), 2025* [[PDF]](https://arxiv.org/abs/2508.03338) [[Code]](https://github.com/bywlzts/CIVQLLIE)
-
-**Tongshun Zhang**, Pingping Liu*, Zhe Zhang, Qiuzhan Zhou
-
----
-
 *Beyond Illumination: Fine-Grained Detail Preservation in Extreme Dark Image Restoration (AAAI, Poster) 2026* [[PDF]](https://arxiv.org/abs/2508.03336) [[Code]](https://github.com/bywlzts/RFGM)
 
 **Tongshun Zhang**, Pingping Liu*, Zixuan Zhong, Zijian Zhang, Qiuzhan Zhou
+
+---
+
+*CIVQLLIE: Causal Intervention with Vector Quantization for Low-Light Image Enhancement  (Arxiv), 2025* [[PDF]](https://arxiv.org/abs/2508.03338) [[Code]](https://github.com/bywlzts/CIVQLLIE)
+
+**Tongshun Zhang**, Pingping Liu*, Zhe Zhang, Qiuzhan Zhou
 
 ---
 
