@@ -36,7 +36,7 @@ For collaborations or inquiries, please feel free to contact me via email.
 
 *SpineBench: A Clinically Salient, Level-Aware Benchmark Powered by the SpineMed-450k Corpus  (ICLR, Poster) 2026* [[PDF]](https://arxiv.org/abs/2510.03160)
 
-Ming Zhao, Pingping Liu*, **Tongshun Zhang**, et al.
+Ming Zhao, Pingping Liu, **Tongshun Zhang**, et al.
 
 ---
 
