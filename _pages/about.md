@@ -28,7 +28,7 @@ For collaborations or inquiries, please feel free to contact me via email.
 
 #  Publications <!-- {#publications} -->
 
-*A Physically-Grounded Attack and Adaptive Defense Framework for Real-World Low-Light Image Enhancement  (Arxiv) 2026*
+*A Physically-Grounded Attack and Adaptive Defense Framework for Real-World Low-Light Image Enhancement  (Arxiv) 2026* [[PDF]](https://arxiv.org/abs/2603.14304)
 
 **Tongshun Zhang**, Pingping Liu*, Yuqing Lei, Zixuan Zhong, Qiuzhan Zhou, Zhiyuan Zha
 
