@@ -136,19 +136,19 @@ Pingping Liu*, Tianqi Li, Qiuzhan Zhou, **Tongshun Zhang**
 - International Journal of Computer Vision (IJCV)
 
 #  Patents
-- 无监督曝光矫正的曝光偏差增强网络模型构建方法、系统 （CN120318103B）2025 刘萍萍;尹莉媛;**张同顺**;王晓艺;周求湛
-- 一种低光图像增强方法、系统、设备以及存储介质 （CN119090751B）2025 刘萍萍;李天奇;周求湛;**张同顺**;卢禹冰
-- 一种低光图像增强方法及系统 （CN119379551B）2025 刘萍萍;**张同顺**;蔡蒙恩;张哲;王晓艺;周求湛
-- 一种低光图像增强方法、系统、设备以及存储介质 (CN120374475A) 2025 刘萍萍; 王晓艺; **张同顺**; 尹莉媛; 周求湛; 侯建华
-- 基于Retinex约束下的生成式结构低照度图像增强方法 (CN120495108A) 2025 	周求湛;杨迪;武慧南;**张同顺**;王聪;刘萍萍
+- 无监督曝光矫正的曝光偏差增强网络模型构建方法、系统 （CN120318103B）2025
+- 一种低光图像增强方法、系统、设备以及存储介质 （CN119090751B）2025
+- 一种低光图像增强方法及系统 （CN119379551B）2025
+- 一种低光图像增强方法、系统、设备以及存储介质 (CN120374475A) 2025
+- 基于Retinex约束下的生成式结构低照度图像增强方法 (CN120495108A) 2025
 
 #  Awards & Achievements
-- [10/2025] National Scholarship (国家奖学金)
+- [10/2025] National Scholarship
 - [09/2025] I was invited to give a lecture at Xiangnan University, focusing on lightweight reconstruction for low-light enhancement.
-- [09/2025] 2024-2025 Graduate Outstanding Scholarship (研究生优秀奖学金)
-- [09/2025] 2024-2025 Outstanding Graduate Students (优秀研究生)
-- [09/2025] China FAW Group Scholarship (中国一汽奖学金)
-- [04/2025] DMFourLLIE was selected for poster presentation at Valse 2025. [Link](https://valser.org/2025/#/poster)
-- [11/2024] DMFourLLIE was selected for the "Academic Research and Discussion (研学论道)" report at Jilin University.
-- [10/2024] 2023-2024 Graduate Outstanding Scholarship (研究生优秀奖学金)
-- [10/2024] 2023-2024 Outstanding Graduate Students (优秀研究生)
+- [09/2025] 2024-2025 Graduate Outstanding Scholarship
+- [09/2025] 2024-2025 Outstanding Graduate Students
+- [09/2025] China FAW Group Scholarship
+- [04/2025] DMFourLLIE was selected for poster presentation at Valse 2025.
+- [11/2024] DMFourLLIE was selected for the Academic Research and Discussion report at Jilin University.
+- [10/2024] 2023-2024 Graduate Outstanding Scholarship
+- [10/2024] 2023-2024 Outstanding Graduate Students
