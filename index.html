@@ -165,7 +165,7 @@
         .paper-links .no-link {
             color: #ccc; font-weight: 400;
         }
-        .level-tag {
+        /* .level-tag {
             display: inline-block;
             background: #eef1fe; color: #4f6ef7;
             padding: 1px 8px;
@@ -175,7 +175,26 @@
             margin-left: 4px;
         }
         .level-tag.green { background: #e6f7e6; color: #2e7d32; }
-        .level-tag.orange { background: #fff3e0; color: #e65100; }
+        .level-tag.orange { background: #fff3e0; color: #e65100; } */
+
+        .level-tag {
+            display: inline-block;
+            background: #eef1fe; 
+            color: #d32f2f;          /* 红色字体 */
+            padding: 1px 8px;
+            border-radius: 10px;
+            font-size: 0.7rem;
+            font-weight: 500;
+            margin-left: 4px;
+        }
+        .level-tag.green { 
+            background: #e6f7e6; 
+            color: #d32f2f;          /* 统一红色 */
+        }
+        .level-tag.orange { 
+            background: #fff3e0; 
+            color: #d32f2f; 
+        }
 
         .news-date { font-weight: 500; color: var(--accent); margin-right: 8px; white-space: nowrap; }
         .service-list { list-style: none; display: flex; flex-direction: column; gap: 8px; }
