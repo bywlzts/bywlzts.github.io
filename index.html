@@ -24,6 +24,7 @@
             --shadow-md: 0 2px 8px rgba(0,0,0,0.06);
             --radius: 8px;
             --sidebar-width: 280px;
+            --scrollbar-thumb: #d1d5db;
         }
         * { margin:0; padding:0; box-sizing:border-box; }
         html { scroll-behavior:smooth; scroll-padding-top:40px; }
@@ -60,6 +61,7 @@
         .sidebar-title { font-size: 0.82rem; opacity: 0.75; margin-top: 4px; }
         .sidebar-affiliation { font-size: 0.76rem; opacity: 0.6; margin-top: 4px; }
 
+        /* 头像下方三个图标 */
         .profile-icons {
             display: flex; justify-content: center; gap: 14px; margin-top: 14px;
         }
@@ -121,18 +123,29 @@
             font-size: 0.95rem; line-height: 1.8;
         }
 
-        /* 可滚动卡片容器（用于 News / 论文 / 专利 / 获奖） */
+        /* 可滚动卡片容器（News/论文/专利/获奖） */
         .scroll-card {
             background: var(--card-bg); border-radius: var(--radius);
             border: 1px solid #eef0f4; box-shadow: var(--shadow-sm);
-            max-height: 380px;          /* 控制显示高度，大概显示7-8条 */
+            max-height: 380px;          /* 固定高度，显示7-8条 */
             overflow-y: auto;
+            position: relative;
         }
         /* 滚动条美化 */
         .scroll-card::-webkit-scrollbar { width: 6px; }
         .scroll-card::-webkit-scrollbar-track { background: transparent; }
-        .scroll-card::-webkit-scrollbar-thumb { background: #d1d5db; border-radius: 3px; }
+        .scroll-card::-webkit-scrollbar-thumb { background: var(--scrollbar-thumb); border-radius: 3px; }
         .scroll-card::-webkit-scrollbar-thumb:hover { background: #b0b5be; }
+
+        /* 可选：在卡片底部加一个淡淡提示（当内容较长时） */
+        .scroll-card::after {
+            content: '';
+            display: block;
+            height: 1px;
+            background: transparent;
+            position: sticky;
+            bottom: 0;
+        }
 
         .scroll-item {
             padding: 12px 20px;
@@ -191,31 +204,28 @@
 <!-- ========== 左侧导航栏 ========== -->
 <aside class="sidebar" id="sidebar">
     <div class="sidebar-profile">
-        <!-- ⚠️ 使用 raw 链接，不要用 blob 链接 -->
+        <!-- ⚠️ 头像图片请确保路径正确，建议上传到仓库根目录并使用 raw 链接或相对路径 -->
         <img class="sidebar-avatar" 
              src="person_photo.png" 
              alt="头像" 
              onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
         <div style="display:none;width:100px;height:100px;border-radius:50%;background:rgba(255,255,255,0.08);margin:0 auto 12px;align-items:center;justify-content:center;font-size:2rem;color:rgba(255,255,255,0.5);">👤</div>
 
-        <!-- ⚠️ 替换姓名、头衔、单位 -->
         <div class="sidebar-name">张同顺</div>
         <div class="sidebar-title">博士研究生</div>
         <div class="sidebar-affiliation">吉林大学 · 计算机科学与技术学院</div>
 
-        <!-- ✅ 三个图标：谷歌学术 / GitHub 官方图标 / 邮箱 -->
+        <!-- 三个图标：谷歌学术 / GitHub 官方图标 / 邮箱 -->
         <div class="profile-icons">
-            <!-- 谷歌学术 -->
             <a href="https://scholar.google.com/citations?user=2EFhwDoAAAAJ&hl=en" target="_blank" title="Google Scholar">
                 🎓
             </a>
-            <!-- GitHub 官方 SVG 图标 -->
             <a href="https://github.com/bywlzts" target="_blank" title="GitHub">
+                <!-- GitHub 官方 SVG 图标（Octicons） -->
                 <svg viewBox="0 0 16 16" aria-hidden="true">
                     <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
                 </svg>
             </a>
-            <!-- 邮箱（注意前面要加 mailto:） -->
             <a href="mailto:bywl_zts@163.com" title="Email">✉️</a>
         </div>
     </div>
@@ -247,11 +257,10 @@
         </div>
     </section>
 
-    <!-- News（可滚动框） -->
+    <!-- News（滚动卡片） -->
     <section class="section" id="news">
         <h2 class="section-heading">📢 News</h2>
         <div class="scroll-card">
-            <!-- 每条新闻放这里，可以有很多条，超出高度会自动滚动 -->
             <div class="scroll-item"><span class="news-date">2026-06</span> 一篇论文被 NeurIPS 2026 接收！</div>
             <div class="scroll-item"><span class="news-date">2026-03</span> 受邀担任 CVPR 2026 审稿人。</div>
             <div class="scroll-item"><span class="news-date">2025-12</span> 获得国家奖学金（博士研究生）。</div>
@@ -259,11 +268,11 @@
             <div class="scroll-item"><span class="news-date">2025-07</span> 一篇合作论文被 ICML 2025 接收。</div>
             <div class="scroll-item"><span class="news-date">2025-05</span> 开源项目达到 500 stars。</div>
             <div class="scroll-item"><span class="news-date">2025-01</span> 开始博士研究生学习。</div>
-            <!-- 继续添加更多新闻 ... -->
+            <!-- 继续添加更多新闻，卡片会自动出现滚动条 -->
         </div>
     </section>
 
-    <!-- 一作论文（可滚动框） -->
+    <!-- 一作论文（滚动卡片） -->
     <section class="section" id="first-author">
         <h2 class="section-heading">📄 一作论文</h2>
         <div class="scroll-card">
@@ -288,11 +297,11 @@
                     <span><strong>张同顺</strong>, 合作者C, 导师姓名</span>
                 </div>
             </div>
-            <!-- 继续添加更多论文，超出高度可滚动 -->
+            <!-- 继续添加论文 -->
         </div>
     </section>
 
-    <!-- 合作论文（可滚动框） -->
+    <!-- 合作论文（滚动卡片） -->
     <section class="section" id="coauthor">
         <h2 class="section-heading">📑 合作论文</h2>
         <div class="scroll-card">
@@ -310,11 +319,11 @@
                     <span>合作者H, <strong>张同顺</strong>, 导师姓名</span>
                 </div>
             </div>
-            <!-- 继续添加 ... -->
+            <!-- 继续添加 -->
         </div>
     </section>
 
-    <!-- 审稿及服务（非滚动，但也可以改成滚动卡片） -->
+    <!-- 审稿及服务 -->
     <section class="section" id="service">
         <h2 class="section-heading">✉️ 审稿及服务</h2>
         <ul class="service-list">
@@ -324,7 +333,7 @@
         </ul>
     </section>
 
-    <!-- 专利（可滚动框） -->
+    <!-- 专利（滚动卡片） -->
     <section class="section" id="patents">
         <h2 class="section-heading">💡 专利</h2>
         <div class="scroll-card">
@@ -336,11 +345,11 @@
                 <strong>自然语言处理语义理解装置</strong><br>
                 <span style="font-size:0.82rem; color:var(--text-muted);">专利号：CN2024YYYYY.Y · 实用新型 · 已申请</span>
             </div>
-            <!-- 继续添加 ... -->
+            <!-- 继续添加专利 -->
         </div>
     </section>
 
-    <!-- 获奖（可滚动框） -->
+    <!-- 获奖（滚动卡片） -->
     <section class="section" id="awards">
         <h2 class="section-heading">🏆 获奖</h2>
         <div class="scroll-card">
@@ -353,7 +362,7 @@
             <div class="scroll-item">
                 🥈 <strong>优秀毕业生</strong> — 吉林大学 2022
             </div>
-            <!-- 继续添加 ... -->
+            <!-- 继续添加 -->
         </div>
     </section>
 
