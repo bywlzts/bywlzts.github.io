@@ -122,7 +122,7 @@
         .scroll-card {
             background: var(--card-bg); border-radius: var(--radius);
             border: 1px solid #eef0f4; box-shadow: var(--shadow-sm);
-            max-height: 380px;
+            max-height: 420px;
             overflow-y: auto;
             position: relative;
         }
@@ -132,21 +132,50 @@
         .scroll-card::-webkit-scrollbar-thumb:hover { background: #b0b5be; }
 
         .scroll-item {
-            padding: 12px 20px;
+            padding: 14px 20px;
             border-bottom: 1px solid var(--border);
             font-size: 0.9rem;
         }
         .scroll-item:last-child { border-bottom: none; }
 
-        .paper-title { font-weight: 600; color: var(--text-primary); margin-bottom: 4px; }
+        .paper-title { font-weight: 600; color: var(--text-primary); margin-bottom: 6px; }
         .paper-meta {
-            display: flex; flex-wrap: wrap; gap: 8px 16px;
+            display: flex; flex-wrap: wrap; gap: 6px 16px;
             font-size: 0.82rem; color: var(--text-muted);
+            align-items: center;
+            margin-bottom: 4px;
         }
         .paper-category {
             background: var(--accent-light); color: var(--accent);
             padding: 2px 10px; border-radius: 12px; font-size: 0.74rem;
+            white-space: nowrap;
         }
+        .paper-authors { color: var(--text-secondary); }
+        .paper-authors strong { color: var(--text-primary); }
+
+        .paper-links {
+            display: flex; flex-wrap: wrap; gap: 8px;
+            font-size: 0.8rem; margin-top: 4px;
+        }
+        .paper-links a {
+            color: var(--accent); text-decoration: none;
+            font-weight: 500;
+        }
+        .paper-links a:hover { text-decoration: underline; }
+        .paper-links .no-link {
+            color: #ccc; font-weight: 400;
+        }
+        .level-tag {
+            display: inline-block;
+            background: #eef1fe; color: #4f6ef7;
+            padding: 1px 8px;
+            border-radius: 10px;
+            font-size: 0.7rem;
+            font-weight: 500;
+            margin-left: 4px;
+        }
+        .level-tag.green { background: #e6f7e6; color: #2e7d32; }
+        .level-tag.orange { background: #fff3e0; color: #e65100; }
 
         .news-date { font-weight: 500; color: var(--accent); margin-right: 8px; white-space: nowrap; }
         .service-list { list-style: none; display: flex; flex-direction: column; gap: 8px; }
@@ -238,9 +267,9 @@
     <section class="section" id="news">
         <h2 class="section-heading">📢 News</h2>
         <div class="scroll-card">
-            <div class="scroll-item"><span class="news-date">Jul 2026</span> 1 paper accepted to INFFUS!</div>
-            <div class="scroll-item"><span class="news-date">Jun 2026</span> 2 papers accepted to IJCAI and TCSVT!</div>
-            <div class="scroll-item"><span class="news-date">Feb 2026</span> 3 papers accepted to ESWA, TGRS and KBS!</div>
+            <div class="scroll-item"><span class="news-date">Jul 2026</span> 1 paper accepted to INFFUS! (Enhanced Fourier‑based Network)</div>
+            <div class="scroll-item"><span class="news-date">Jun 2026</span> 2 papers accepted to IJCAI (FreSH) and TCSVT (HyperISTD)!</div>
+            <div class="scroll-item"><span class="news-date">Feb 2026</span> 3 papers accepted to ESWA (Synergistic Mamba), TGRS (PQGNet) and KBS (Physics‑Driven Feature Decoupling)!</div>
             <div class="scroll-item"><span class="news-date">Nov 2025</span> 2 papers about LLIE (Frequency Fusion, Frequency &amp; Mamba) accepted to AAAI 2026!</div>
             <div class="scroll-item"><span class="news-date">Sep 2025</span> 2 papers about LLIE (Fourier &amp; MoE, Unsupervised Retinex-based) accepted to ESWA!</div>
             <div class="scroll-item"><span class="news-date">Jul 2025</span> 1 paper about LLIE (Causal Wavelet) accepted to ICCV 2025!</div>
@@ -255,76 +284,129 @@
     <section class="section" id="first-author">
         <h2 class="section-heading">📄 First-Author Papers</h2>
         <div class="scroll-card">
-            <!-- 1. Physically-Grounded Attack -->
+            <!-- 1. Enhanced Fourier‑based Network (INFFUS 2026) -->
             <div class="scroll-item">
-                <div class="paper-title">A Physically-Grounded Attack and Adaptive Defense Framework for Real-World Low-Light Image Enhancement</div>
+                <div class="paper-title">Enhanced Fourier‑based Network for Low‑Light Image Enhancement</div>
                 <div class="paper-meta">
-                    <span class="paper-category">arXiv 2026</span>
-                    <span><strong>Tongshun Zhang</strong>, Pingping Liu*, Yuqing Lei, Zixuan Zhong, Qiuzhan Zhou, Zhiyuan Zha</span>
+                    <span class="paper-category">INFFUS 2026</span>
+                    <span class="level-tag green">SCI-1 (IF 18.6)</span>
+                    <span class="paper-authors"><strong>Tongshun Zhang</strong>, JiaQi Zhang, Pingping Liu*, Qiuzhan Zhou</span>
+                </div>
+                <div class="paper-links">
+                    <span class="no-link">[PDF]</span>
+                    <!-- <a href="#">[PDF]</a> -->
                 </div>
             </div>
-            <!-- 2. SPJFNet -->
+            <!-- 2. SPJFNet (AAAI 2026) -->
             <div class="scroll-item">
                 <div class="paper-title">SPJFNet: Self-Mining Prior-Guided Joint Frequency Enhancement for Ultra-Efficient Dark Image Restoration</div>
                 <div class="paper-meta">
                     <span class="paper-category">AAAI 2026</span>
-                    <span><strong>Tongshun Zhang</strong>, Pingping Liu*, Zijian Zhang, Qiuzhan Zhou</span>
+                    <span class="level-tag">CCF-A</span>
+                    <span class="paper-authors"><strong>Tongshun Zhang</strong>, Pingping Liu*, Zijian Zhang, Qiuzhan Zhou</span>
+                </div>
+                <div class="paper-links">
+                    <a href="https://arxiv.org/abs/2508.04041" target="_blank">[PDF]</a>
+                    <a href="https://github.com/bywlzts/SPJFNet" target="_blank">[Code]</a>
                 </div>
             </div>
-            <!-- 3. Beyond Illumination -->
+            <!-- 3. Beyond Illumination (AAAI 2026) -->
             <div class="scroll-item">
                 <div class="paper-title">Beyond Illumination: Fine-Grained Detail Preservation in Extreme Dark Image Restoration</div>
                 <div class="paper-meta">
                     <span class="paper-category">AAAI 2026</span>
-                    <span><strong>Tongshun Zhang</strong>, Pingping Liu*, Zixuan Zhong, Zijian Zhang, Qiuzhan Zhou</span>
+                    <span class="level-tag">CCF-A</span>
+                    <span class="paper-authors"><strong>Tongshun Zhang</strong>, Pingping Liu*, Zixuan Zhong, Zijian Zhang, Qiuzhan Zhou</span>
+                </div>
+                <div class="paper-links">
+                    <a href="https://arxiv.org/abs/2508.03336" target="_blank">[PDF]</a>
+                    <a href="https://github.com/bywlzts/RFGM" target="_blank">[Code]</a>
                 </div>
             </div>
-            <!-- 4. CIVQLLIE -->
+            <!-- 4. Physically-Grounded Attack (arXiv 2026) -->
+            <div class="scroll-item">
+                <div class="paper-title">A Physically-Grounded Attack and Adaptive Defense Framework for Real-World Low-Light Image Enhancement</div>
+                <div class="paper-meta">
+                    <span class="paper-category">arXiv 2026</span>
+                    <span class="paper-authors"><strong>Tongshun Zhang</strong>, Pingping Liu*, Yuqing Lei, Zixuan Zhong, Qiuzhan Zhou, Zhiyuan Zha</span>
+                </div>
+                <div class="paper-links">
+                    <a href="https://arxiv.org/abs/2603.14304" target="_blank">[PDF]</a>
+                </div>
+            </div>
+            <!-- 5. CIVQLLIE (arXiv 2025) -->
             <div class="scroll-item">
                 <div class="paper-title">CIVQLLIE: Causal Intervention with Vector Quantization for Low-Light Image Enhancement</div>
                 <div class="paper-meta">
                     <span class="paper-category">arXiv 2025</span>
-                    <span><strong>Tongshun Zhang</strong>, Pingping Liu*, Zhe Zhang, Qiuzhan Zhou</span>
+                    <span class="paper-authors"><strong>Tongshun Zhang</strong>, Pingping Liu*, Zhe Zhang, Qiuzhan Zhou</span>
+                </div>
+                <div class="paper-links">
+                    <a href="https://arxiv.org/abs/2508.03338" target="_blank">[PDF]</a>
+                    <a href="https://github.com/bywlzts/CIVQLLIE" target="_blank">[Code]</a>
                 </div>
             </div>
-            <!-- 5. BSMamba -->
+            <!-- 6. BSMamba (arXiv 2025) -->
             <div class="scroll-item">
                 <div class="paper-title">BSMamba: Brightness and Semantic Modeling for Long-Range Interaction in Low-Light Image Enhancement</div>
                 <div class="paper-meta">
                     <span class="paper-category">arXiv 2025</span>
-                    <span><strong>Tongshun Zhang</strong>, Pingping Liu*, Mengen Cai, Zijian Zhang, Yubing Lu, Qiuzhan Zhou</span>
+                    <span class="paper-authors"><strong>Tongshun Zhang</strong>, Pingping Liu*, Mengen Cai, Zijian Zhang, Yubing Lu, Qiuzhan Zhou</span>
+                </div>
+                <div class="paper-links">
+                    <a href="https://arxiv.org/abs/2506.18346" target="_blank">[PDF]</a>
+                    <a href="https://github.com/bywlzts/BSMamba" target="_blank">[Code]</a>
                 </div>
             </div>
-            <!-- 6. CWNet -->
+            <!-- 7. CWNet (ICCV 2025) -->
             <div class="scroll-item">
                 <div class="paper-title">CWNet: Causal Wavelet Network for Low-Light Image Enhancement</div>
                 <div class="paper-meta">
                     <span class="paper-category">ICCV 2025</span>
-                    <span><strong>Tongshun Zhang</strong>, Pingping Liu*, Yubing Lu, Mengen Cai, Zijian Zhang, Zhe Zhang, Qiuzhan Zhou</span>
+                    <span class="level-tag">CCF-A</span>
+                    <span class="paper-authors"><strong>Tongshun Zhang</strong>, Pingping Liu*, Yubing Lu, Mengen Cai, Zijian Zhang, Zhe Zhang, Qiuzhan Zhou</span>
+                </div>
+                <div class="paper-links">
+                    <a href="https://arxiv.org/abs/2507.10689" target="_blank">[PDF]</a>
+                    <a href="https://github.com/bywlzts/CWNet-Causal-Wavelet-Network" target="_blank">[Code]</a>
                 </div>
             </div>
-            <!-- 7. DMFourLLIE -->
+            <!-- 8. DMFourLLIE (ACM MM 2024) -->
             <div class="scroll-item">
                 <div class="paper-title">DMFourLLIE: Dual-Stage and Multi-Branch Fourier Network for Low-Light Image Enhancement</div>
                 <div class="paper-meta">
-                    <span class="paper-category">ACM MM 2024 (Oral)</span>
-                    <span><strong>Tongshun Zhang</strong>, Pingping Liu*, Ming Zhao, Haotian Lv</span>
+                    <span class="paper-category">ACM MM 2024</span>
+                    <span class="level-tag">CCF-A</span>
+                    <span class="paper-authors"><strong>Tongshun Zhang</strong>, Pingping Liu*, Ming Zhao, Haotian Lv</span>
+                </div>
+                <div class="paper-links">
+                    <a href="https://arxiv.org/abs/2412.00683" target="_blank">[PDF]</a>
+                    <a href="https://github.com/bywlzts/DMFourLLIE" target="_blank">[Code]</a>
                 </div>
             </div>
-            <!-- 8. CMRetinexNet -->
+            <!-- 9. CMRetinexNet (INFFUS 2025) -->
             <div class="scroll-item">
                 <div class="paper-title">Cross-modal guided and refinement-enhanced Retinex network for robust low-light image enhancement</div>
                 <div class="paper-meta">
                     <span class="paper-category">INFFUS 2025</span>
-                    <span><strong>Tongshun Zhang</strong>, Pingping Liu*, Mengen Cai, Xiaoyi Wang, Qiuzhan Zhou</span>
+                    <span class="level-tag green">SCI-1 (IF 18.6)</span>
+                    <span class="paper-authors"><strong>Tongshun Zhang</strong>, Pingping Liu*, Mengen Cai, Xiaoyi Wang, Qiuzhan Zhou</span>
+                </div>
+                <div class="paper-links">
+                    <a href="https://www.sciencedirect.com/science/article/abs/pii/S1566253525004531" target="_blank">[PDF]</a>
+                    <a href="https://github.com/bywlzts/CMRetinexNet" target="_blank">[Code]</a>
                 </div>
             </div>
-            <!-- 9. APMoE-Net (co-first / second author with †) -->
+            <!-- 10. APMoE-Net (ESWA 2025, co-first) -->
             <div class="scroll-item">
                 <div class="paper-title">APMoE-Net: Fourier Amplitude-Phase Joint Enhancement and MoE Compensation for Low-Light Image Enhancement</div>
                 <div class="paper-meta">
                     <span class="paper-category">ESWA 2025</span>
-                    <span>Mengen Cai, <strong>Tongshun Zhang</strong> †, Pingping Liu*, Qiuzhan Zhou</span>
+                    <span class="level-tag green">SCI-1 (IF 8.5)</span>
+                    <span class="paper-authors">Mengen Cai, <strong>Tongshun Zhang</strong> †, Pingping Liu*, Qiuzhan Zhou</span>
+                </div>
+                <div class="paper-links">
+                    <span class="no-link">[PDF]</span>
                 </div>
             </div>
         </div>
@@ -334,68 +416,137 @@
     <section class="section" id="coauthor">
         <h2 class="section-heading">📑 Co-Authored Papers</h2>
         <div class="scroll-card">
-            <!-- SpineBench -->
+            <!-- FreSH (IJCAI 2026) -->
+            <div class="scroll-item">
+                <div class="paper-title">FreSH: Frequency-Segmented Hierarchical Multi-Expert Framework for Multivariate Time Series Classification</div>
+                <div class="paper-meta">
+                    <span class="paper-category">IJCAI 2026</span>
+                    <span class="level-tag">CCF-B</span>
+                    <span class="paper-authors">Pingping Liu, Muyao Wang, Zijian Zhang, <strong>Tongshun Zhang</strong>, Hao Miao, Guorui Xie, Qingliang Li, Qiuzhan Zhou</span>
+                </div>
+                <div class="paper-links">
+                    <span class="no-link">[PDF]</span>
+                </div>
+            </div>
+            <!-- HyperISTD (TCSVT 2026) -->
+            <div class="scroll-item">
+                <div class="paper-title">HyperISTD: Angular-Consistent Modeling in Hyperbolic Space for Infrared Small Target Detection</div>
+                <div class="paper-meta">
+                    <span class="paper-category">TCSVT 2026</span>
+                    <span class="level-tag">SCI-1</span>
+                    <span class="paper-authors">Yubing Lu, Pingping Liu*, <strong>Tongshun Zhang</strong>, Aohua Li, Qiuzhan Zhou</span>
+                </div>
+                <div class="paper-links">
+                    <span class="no-link">[PDF]</span>
+                </div>
+            </div>
+            <!-- Synergistic Mamba (ESWA 2026) -->
+            <div class="scroll-item">
+                <div class="paper-title">Synergistic Mamba: Mastering Global Frequency and Local Spatial Contexts for Low-light Image Enhancement</div>
+                <div class="paper-meta">
+                    <span class="paper-category">ESWA 2026</span>
+                    <span class="level-tag green">SCI-1 (IF 8.5)</span>
+                    <span class="paper-authors">Shijun Fu, Pingping Liu*, <strong>Tongshun Zhang</strong>, Hongwei Zhao, Qiuzhan Zhou</span>
+                </div>
+                <div class="paper-links">
+                    <a href="https://www.sciencedirect.com/science/article/pii/S0957417425045610" target="_blank">[PDF]</a>
+                    <a href="https://github.com/cookfu/Synergistic_Mamba.git" target="_blank">[Code]</a>
+                </div>
+            </div>
+            <!-- Physics-Driven Feature Decoupling (KBS 2026) -->
+            <div class="scroll-item">
+                <div class="paper-title">Physics-Driven Feature Decoupling for Infrared Small Targets: A Dual Geometry-Guided Experts Network</div>
+                <div class="paper-meta">
+                    <span class="paper-category">KBS 2026</span>
+                    <span class="level-tag green">SCI-1 (IF 8.8)</span>
+                    <span class="paper-authors">Yubing Lu, Pingping Liu*, <strong>Tongshun Zhang</strong>, Aohua Li, Qiuzhan Zhou</span>
+                </div>
+                <div class="paper-links">
+                    <span class="no-link">[PDF]</span>
+                </div>
+            </div>
+            <!-- PQGNet (TGRS 2026) -->
+            <div class="scroll-item">
+                <div class="paper-title">PQGNet: Perceptual Query Guided Network for Infrared Small Target Detection</div>
+                <div class="paper-meta">
+                    <span class="paper-category">TGRS 2026</span>
+                    <span class="level-tag">SCI-1</span>
+                    <span class="paper-authors">Pingping Liu*, Aohua Li, Yubing Lu, <strong>Tongshun Zhang</strong>, Ming Yang, Qiuzhan Zhou</span>
+                </div>
+                <div class="paper-links">
+                    <span class="no-link">[PDF]</span>
+                </div>
+            </div>
+            <!-- SpineBench (ICLR 2026) -->
             <div class="scroll-item">
                 <div class="paper-title">SpineBench: A Clinically Salient, Level-Aware Benchmark Powered by the SpineMed-450k Corpus</div>
                 <div class="paper-meta">
                     <span class="paper-category">ICLR 2026 (Poster)</span>
-                    <span>Ming Zhao, Pingping Liu, <strong>Tongshun Zhang</strong>, et al.</span>
+                    <span class="level-tag">CCF-A</span>
+                    <span class="paper-authors">Ming Zhao, Pingping Liu, <strong>Tongshun Zhang</strong>, et al.</span>
+                </div>
+                <div class="paper-links">
+                    <a href="https://arxiv.org/abs/2510.03160" target="_blank">[PDF]</a>
                 </div>
             </div>
-            <!-- Physics-Driven Feature Decoupling -->
-            <div class="scroll-item">
-                <div class="paper-title">Physics-Driven Feature Decoupling for Infrared Small Targets: A Dual Geometry-Guided Experts Network</div>
-                <div class="paper-meta">
-                    <span class="paper-category">KBS 2025</span>
-                    <span>Yubing Lu, Pingping Liu*, <strong>Tongshun Zhang</strong>, Aohua Li, Qiuzhan Zhou</span>
-                </div>
-            </div>
-            <!-- Synergistic Mamba -->
-            <div class="scroll-item">
-                <div class="paper-title">Synergistic Mamba: Mastering Global Frequency and Local Spatial Contexts for Low-light Image Enhancement</div>
-                <div class="paper-meta">
-                    <span class="paper-category">ESWA 2025</span>
-                    <span>Shijun Fu, Pingping Liu*, <strong>Tongshun Zhang</strong>, Hongwei Zhao, Qiuzhan Zhou</span>
-                </div>
-            </div>
-            <!-- Differentiable histogram-guided -->
+            <!-- Differentiable histogram-guided (ESWA 2025) -->
             <div class="scroll-item">
                 <div class="paper-title">Differentiable histogram-guided unsupervised Retinex enhancement for paired low-light images</div>
                 <div class="paper-meta">
                     <span class="paper-category">ESWA 2025</span>
-                    <span>Liyuan Yin, Pingping Liu*, <strong>Tongshun Zhang</strong>, Hongwei Zhao, Qiuzhan Zhou</span>
+                    <span class="level-tag green">SCI-1 (IF 8.5)</span>
+                    <span class="paper-authors">Liyuan Yin, Pingping Liu*, <strong>Tongshun Zhang</strong>, Hongwei Zhao, Qiuzhan Zhou</span>
+                </div>
+                <div class="paper-links">
+                    <a href="https://www.sciencedirect.com/science/article/abs/pii/S0957417425033974" target="_blank">[PDF]</a>
+                    <a href="https://github.com/yoonyin/DHURE-main" target="_blank">[Code]</a>
                 </div>
             </div>
-            <!-- WEC-DG -->
-            <div class="scroll-item">
-                <div class="paper-title">WEC-DG: Multi-Exposure Wavelet Correction Method Guided by Degradation Description</div>
-                <div class="paper-meta">
-                    <span class="paper-category">arXiv 2025</span>
-                    <span>Ming Zhao, Pingping Liu*, <strong>Tongshun Zhang</strong>, Zhe Zhang</span>
-                </div>
-            </div>
-            <!-- ReF-LLE -->
-            <div class="scroll-item">
-                <div class="paper-title">ReF-LLE: Personalized Low-Light Enhancement via Reference-Guided Deep Reinforcement Learning</div>
-                <div class="paper-meta">
-                    <span class="paper-category">ICME 2025 (Oral)</span>
-                    <span>Ming Zhao, Pingping Liu*, <strong>Tongshun Zhang</strong>, Zhe Zhang</span>
-                </div>
-            </div>
-            <!-- Multi-modal fusion guided -->
+            <!-- Multi-modal fusion guided (ESWA 2025) -->
             <div class="scroll-item">
                 <div class="paper-title">Multi-modal fusion guided retinex-based low-light image enhancement</div>
                 <div class="paper-meta">
                     <span class="paper-category">ESWA 2025</span>
-                    <span>Pingping Liu*, Xiaoyi Wang, <strong>Tongshun Zhang</strong>, Liyuan Yin</span>
+                    <span class="level-tag green">SCI-1 (IF 8.5)</span>
+                    <span class="paper-authors">Pingping Liu*, Xiaoyi Wang, <strong>Tongshun Zhang</strong>, Liyuan Yin</span>
+                </div>
+                <div class="paper-links">
+                    <a href="https://www.sciencedirect.com/science/article/abs/pii/S0957417425022729" target="_blank">[PDF]</a>
                 </div>
             </div>
-            <!-- Adaptive illumination -->
+            <!-- WEC-DG (arXiv 2025) -->
+            <div class="scroll-item">
+                <div class="paper-title">WEC-DG: Multi-Exposure Wavelet Correction Method Guided by Degradation Description</div>
+                <div class="paper-meta">
+                    <span class="paper-category">arXiv 2025</span>
+                    <span class="paper-authors">Ming Zhao, Pingping Liu*, <strong>Tongshun Zhang</strong>, Zhe Zhang</span>
+                </div>
+                <div class="paper-links">
+                    <a href="https://arxiv.org/pdf/2508.09565" target="_blank">[PDF]</a>
+                </div>
+            </div>
+            <!-- ReF-LLE (ICME 2025 Oral) -->
+            <div class="scroll-item">
+                <div class="paper-title">ReF-LLE: Personalized Low-Light Enhancement via Reference-Guided Deep Reinforcement Learning</div>
+                <div class="paper-meta">
+                    <span class="paper-category">ICME 2025</span>
+                    <span class="level-tag">CCF-B</span>
+                    <span class="paper-authors">Ming Zhao, Pingping Liu*, <strong>Tongshun Zhang</strong>, Zhe Zhang</span>
+                </div>
+                <div class="paper-links">
+                    <a href="https://arxiv.org/abs/2506.22216" target="_blank">[PDF]</a>
+                </div>
+            </div>
+            <!-- Adaptive illumination (CVIU 2025) -->
             <div class="scroll-item">
                 <div class="paper-title">Adaptive illumination and noise-free detail recovery via visual decomposition for low-light image enhancement</div>
                 <div class="paper-meta">
                     <span class="paper-category">CVIU 2025</span>
-                    <span>Pingping Liu*, Tianqi Li, Qiuzhan Zhou, <strong>Tongshun Zhang</strong></span>
+                    <span class="level-tag">CCF-B</span>
+                    <span class="paper-authors">Pingping Liu*, Tianqi Li, Qiuzhan Zhou, <strong>Tongshun Zhang</strong></span>
+                </div>
+                <div class="paper-links">
+                    <span class="no-link">[PDF]</span>
                 </div>
             </div>
         </div>
