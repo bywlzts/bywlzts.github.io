@@ -3,13 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>个人主页 - bywlzts</title>
+    <title>张同顺 - 个人主页</title>
     <style>
         :root {
             --sidebar-bg: #1a1d24;
             --sidebar-text: #c5c9d2;
             --sidebar-heading: #ffffff;
-            --sidebar-active: #ffffff;
             --sidebar-hover-bg: rgba(255, 255, 255, 0.06);
             --sidebar-active-bg: rgba(255, 255, 255, 0.1);
             --sidebar-accent: #6b9fff;
@@ -19,22 +18,18 @@
             --text-secondary: #5a5f6b;
             --text-muted: #8b8f98;
             --border: #e5e7eb;
-            --border-light: #f0f1f3;
             --accent: #4f6ef7;
             --accent-light: #eef1fe;
-            --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.04);
-            --shadow-md: 0 2px 8px rgba(0, 0, 0, 0.06);
+            --shadow-sm: 0 1px 2px rgba(0,0,0,0.04);
+            --shadow-md: 0 2px 8px rgba(0,0,0,0.06);
             --radius: 8px;
-            --radius-sm: 5px;
-            --transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
             --sidebar-width: 280px;
         }
-
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        html { scroll-behavior: smooth; scroll-padding-top: 40px; }
+        * { margin:0; padding:0; box-sizing:border-box; }
+        html { scroll-behavior:smooth; scroll-padding-top:40px; }
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
-            background-color: var(--main-bg);
+            background: var(--main-bg);
             color: var(--text-primary);
             line-height: 1.6;
             display: flex;
@@ -43,85 +38,64 @@
 
         /* 侧边栏 */
         .sidebar {
-            position: fixed;
-            top: 0; left: 0;
-            width: var(--sidebar-width);
-            height: 100vh;
+            position: fixed; top:0; left:0;
+            width: var(--sidebar-width); height: 100vh;
             background: var(--sidebar-bg);
             color: var(--sidebar-text);
-            display: flex;
-            flex-direction: column;
+            display: flex; flex-direction: column;
             padding: 36px 24px 28px;
             z-index: 100;
-            border-right: 1px solid rgba(255, 255, 255, 0.06);
+            border-right: 1px solid rgba(255,255,255,0.06);
             overflow-y: auto;
         }
-
         .sidebar-profile { text-align: center; margin-bottom: 20px; }
         .sidebar-avatar {
             width: 100px; height: 100px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 3px solid rgba(255, 255, 255, 0.2);
+            border-radius: 50%; object-fit: cover;
+            border: 3px solid rgba(255,255,255,0.2);
             margin-bottom: 12px;
-            background: rgba(255, 255, 255, 0.08);
+            background: rgba(255,255,255,0.08);
         }
         .sidebar-name { font-size: 1.2rem; font-weight: 700; color: var(--sidebar-heading); }
         .sidebar-title { font-size: 0.82rem; opacity: 0.75; margin-top: 4px; }
         .sidebar-affiliation { font-size: 0.76rem; opacity: 0.6; margin-top: 4px; }
 
-        /* 三个图标（头像下方） */
         .profile-icons {
-            display: flex;
-            justify-content: center;
-            gap: 14px;
-            margin-top: 14px;
+            display: flex; justify-content: center; gap: 14px; margin-top: 14px;
         }
         .profile-icons a {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
+            display: inline-flex; align-items: center; justify-content: center;
             width: 38px; height: 38px;
             border-radius: 50%;
-            background: rgba(255, 255, 255, 0.1);
+            background: rgba(255,255,255,0.1);
             color: #fff;
             text-decoration: none;
-            font-size: 1.2rem;
             transition: all 0.2s;
-            backdrop-filter: blur(4px);
+        }
+        .profile-icons a svg {
+            width: 20px; height: 20px; fill: currentColor;
         }
         .profile-icons a:hover {
-            background: rgba(255, 255, 255, 0.25);
+            background: rgba(255,255,255,0.25);
             transform: translateY(-2px);
         }
 
-        .sidebar-divider { border: none; border-top: 1px solid rgba(255, 255, 255, 0.08); margin: 18px 0; }
-
+        .sidebar-divider { border: none; border-top: 1px solid rgba(255,255,255,0.08); margin: 18px 0; }
         .sidebar-nav { list-style: none; flex: 1; }
         .sidebar-nav li a {
             display: flex; align-items: center; gap: 10px;
-            padding: 10px 14px;
-            border-radius: var(--radius-sm);
-            text-decoration: none;
-            color: var(--sidebar-text);
-            font-size: 0.9rem;
-            transition: all var(--transition);
+            padding: 10px 14px; border-radius: 5px;
+            text-decoration: none; color: var(--sidebar-text);
+            font-size: 0.9rem; transition: all 0.25s;
         }
         .sidebar-nav li a:hover { background: var(--sidebar-hover-bg); color: #fff; }
         .sidebar-nav li a.active {
-            background: var(--sidebar-active-bg);
-            color: #fff;
-            font-weight: 550;
+            background: var(--sidebar-active-bg); color: #fff; font-weight: 550;
             position: relative;
         }
         .sidebar-nav li a.active::before {
-            content: '';
-            position: absolute;
-            left: 0; top: 50%;
-            transform: translateY(-50%);
-            width: 3px; height: 18px;
-            border-radius: 0 3px 3px 0;
-            background: var(--sidebar-accent);
+            content: ''; position: absolute; left:0; top:50%; transform: translateY(-50%);
+            width: 3px; height: 18px; border-radius: 0 3px 3px 0; background: var(--sidebar-accent);
         }
         .sidebar-nav-icon { width: 20px; text-align: center; opacity: 0.7; }
 
@@ -129,86 +103,63 @@
         .main-content {
             margin-left: var(--sidebar-width);
             padding: 40px 48px 60px;
-            max-width: 900px;
-            width: 100%;
+            max-width: 900px; width: 100%;
         }
-
         .section { margin-bottom: 44px; scroll-margin-top: 30px; }
         .section-heading {
             font-size: 1.35rem; font-weight: 700;
-            margin-bottom: 18px;
-            padding-bottom: 10px;
+            margin-bottom: 16px; padding-bottom: 10px;
             border-bottom: 2px solid var(--border);
             display: flex; align-items: center; gap: 8px;
         }
 
+        /* 个人简介卡片 */
         .about-card {
-            background: var(--card-bg);
-            border-radius: var(--radius);
-            padding: 26px 28px;
-            box-shadow: var(--shadow-sm);
-            border: 1px solid var(--border-light);
-            color: var(--text-secondary);
-            font-size: 0.95rem;
-            line-height: 1.8;
+            background: var(--card-bg); border-radius: var(--radius);
+            padding: 26px 28px; box-shadow: var(--shadow-sm);
+            border: 1px solid #eef0f4; color: var(--text-secondary);
+            font-size: 0.95rem; line-height: 1.8;
         }
 
-        /* 折叠面板 */
-        .accordion {
-            border-radius: var(--radius);
-            background: var(--card-bg);
-            border: 1px solid var(--border-light);
-            box-shadow: var(--shadow-sm);
-            overflow: hidden;
+        /* 可滚动卡片容器（用于 News / 论文 / 专利 / 获奖） */
+        .scroll-card {
+            background: var(--card-bg); border-radius: var(--radius);
+            border: 1px solid #eef0f4; box-shadow: var(--shadow-sm);
+            max-height: 380px;          /* 控制显示高度，大概显示7-8条 */
+            overflow-y: auto;
         }
-        .accordion-item { border-bottom: 1px solid var(--border-light); }
-        .accordion-item:last-child { border-bottom: none; }
+        /* 滚动条美化 */
+        .scroll-card::-webkit-scrollbar { width: 6px; }
+        .scroll-card::-webkit-scrollbar-track { background: transparent; }
+        .scroll-card::-webkit-scrollbar-thumb { background: #d1d5db; border-radius: 3px; }
+        .scroll-card::-webkit-scrollbar-thumb:hover { background: #b0b5be; }
 
-        .accordion-header {
-            display: flex; align-items: center; justify-content: space-between;
-            width: 100%; padding: 15px 20px;
-            background: none; border: none;
-            cursor: pointer;
-            font-size: 0.93rem; font-weight: 500;
-            color: var(--text-primary);
-            text-align: left;
-            transition: background 0.2s;
-        }
-        .accordion-header:hover { background: #f8f9fb; }
-        .accordion-arrow { transition: transform 0.25s; color: var(--text-muted); font-size: 0.7rem; }
-        .accordion-item.open .accordion-arrow { transform: rotate(180deg); }
-
-        .accordion-body {
-            max-height: 0; overflow: hidden;
-            transition: max-height 0.4s ease, padding 0.3s ease;
-            padding: 0 20px;
-            background: #fafbfc;
-        }
-        .accordion-item.open .accordion-body {
-            max-height: 600px;
-            padding: 14px 20px 18px;
-        }
-
-        .paper-item, .news-item, .simple-item {
-            padding: 10px 0;
-            border-bottom: 1px solid var(--border-light);
+        .scroll-item {
+            padding: 12px 20px;
+            border-bottom: 1px solid var(--border);
             font-size: 0.9rem;
         }
-        .paper-item:last-child, .news-item:last-child { border-bottom: none; }
-        .paper-title { font-weight: 600; color: var(--text-primary); margin-bottom: 4px; }
-        .paper-meta { display: flex; flex-wrap: wrap; gap: 8px 16px; font-size: 0.82rem; color: var(--text-muted); }
-        .paper-category { background: var(--accent-light); color: var(--accent); padding: 2px 10px; border-radius: 12px; font-size: 0.74rem; }
-        .news-date { font-weight: 500; color: var(--accent); margin-right: 8px; white-space: nowrap; }
+        .scroll-item:last-child { border-bottom: none; }
 
-        /* 审稿服务 */
+        .paper-title { font-weight: 600; color: var(--text-primary); margin-bottom: 4px; }
+        .paper-meta {
+            display: flex; flex-wrap: wrap; gap: 8px 16px;
+            font-size: 0.82rem; color: var(--text-muted);
+        }
+        .paper-category {
+            background: var(--accent-light); color: var(--accent);
+            padding: 2px 10px; border-radius: 12px; font-size: 0.74rem;
+        }
+
+        .news-date { font-weight: 500; color: var(--accent); margin-right: 8px; white-space: nowrap; }
         .service-list { list-style: none; display: flex; flex-direction: column; gap: 8px; }
         .service-list li {
             background: var(--card-bg); padding: 12px 16px;
-            border-radius: var(--radius-sm); border: 1px solid var(--border-light);
+            border-radius: 5px; border: 1px solid #eef0f4;
             display: flex; gap: 10px; align-items: flex-start;
         }
 
-        /* 响应式 */
+        /* 移动端 */
         @media (max-width: 768px) {
             body { flex-direction: column; }
             .sidebar {
@@ -240,8 +191,10 @@
 <!-- ========== 左侧导航栏 ========== -->
 <aside class="sidebar" id="sidebar">
     <div class="sidebar-profile">
-        <!-- ⚠️ 替换为你的头像链接 -->
-        <img class="sidebar-avatar" src="https://raw.githubusercontent.com/bywlzts/bywlzts.github.io/main/person_photo.png" alt="头像" 
+        <!-- ⚠️ 使用 raw 链接，不要用 blob 链接 -->
+        <img class="sidebar-avatar" 
+             src="https://raw.githubusercontent.com/bywlzts/bywlzts.github.io/main/person_photo.png" 
+             alt="头像" 
              onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
         <div style="display:none;width:100px;height:100px;border-radius:50%;background:rgba(255,255,255,0.08);margin:0 auto 12px;align-items:center;justify-content:center;font-size:2rem;color:rgba(255,255,255,0.5);">👤</div>
 
@@ -250,14 +203,20 @@
         <div class="sidebar-title">博士研究生</div>
         <div class="sidebar-affiliation">吉林大学 · 计算机科学与技术学院</div>
 
-        <!-- ✅ 三个图标：谷歌学术、GitHub、邮箱 -->
+        <!-- ✅ 三个图标：谷歌学术 / GitHub 官方图标 / 邮箱 -->
         <div class="profile-icons">
-            <!-- ⚠️ 把 href 替换成你自己的谷歌学术主页链接 -->
-            <a href="https://scholar.google.com/citations?user=2EFhwDoAAAAJ&hl=en" target="_blank" title="Google Scholar">🎓</a>
-            <!-- ⚠️ GitHub 链接已指向你，可保留 -->
-            <a href="https://github.com/bywlzts" target="_blank" title="GitHub">🐙</a>
-            <!-- ⚠️ 替换邮箱地址 -->
-            <a href="bywl_zts@163.com" title="Email">✉️</a>
+            <!-- 谷歌学术 -->
+            <a href="https://scholar.google.com/citations?user=2EFhwDoAAAAJ&hl=en" target="_blank" title="Google Scholar">
+                🎓
+            </a>
+            <!-- GitHub 官方 SVG 图标 -->
+            <a href="https://github.com/bywlzts" target="_blank" title="GitHub">
+                <svg viewBox="0 0 16 16" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+                </svg>
+            </a>
+            <!-- 邮箱（注意前面要加 mailto:） -->
+            <a href="mailto:bywl_zts@163.com" title="Email">✉️</a>
         </div>
     </div>
 
@@ -283,133 +242,118 @@
     <section class="section" id="about">
         <h2 class="section-heading">🏠 个人简介</h2>
         <div class="about-card">
-            <p>你好！我是<strong>你的姓名</strong>，目前在<strong>某某大学</strong>计算机学院攻读博士学位。研究方向包括<span style="color:var(--accent);font-weight:500;">机器学习</span>、<span style="color:var(--accent);font-weight:500;">计算机视觉</span>等。</p>
-            <p style="margin-top:12px;">此前于20XX年获得学士学位，20XX年获得硕士学位。研究成果发表在 NeurIPS、ICML、CVPR 等会议。</p>
-            <p style="margin-top:12px;">📧 邮箱：yourname@example.com</p>
+            <p>你好！我是<strong>张同顺</strong>，目前在<strong>吉林大学</strong>计算机科学与技术学院攻读博士学位。研究方向包括<span style="color:var(--accent);font-weight:500;">机器学习</span>、<span style="color:var(--accent);font-weight:500;">计算机视觉</span>等。</p>
+            <p style="margin-top:12px;">📧 邮箱：bywl_zts@163.com</p>
         </div>
     </section>
 
-    <!-- News（下拉框） -->
+    <!-- News（可滚动框） -->
     <section class="section" id="news">
         <h2 class="section-heading">📢 News</h2>
-        <div class="accordion">
-            <div class="accordion-item" id="newsItem">
-                <button class="accordion-header" data-target="newsItem">
-                    <span>📰 最新动态（点击展开）</span>
-                    <span class="accordion-arrow">▼</span>
-                </button>
-                <div class="accordion-body">
-                    <div class="news-item"><span class="news-date">2026-06</span> 一篇论文被 NeurIPS 2026 接收！</div>
-                    <div class="news-item"><span class="news-date">2026-03</span> 受邀担任 CVPR 2026 审稿人。</div>
-                    <div class="news-item"><span class="news-date">2025-12</span> 获得国家奖学金（博士研究生）。</div>
-                </div>
-            </div>
+        <div class="scroll-card">
+            <!-- 每条新闻放这里，可以有很多条，超出高度会自动滚动 -->
+            <div class="scroll-item"><span class="news-date">2026-06</span> 一篇论文被 NeurIPS 2026 接收！</div>
+            <div class="scroll-item"><span class="news-date">2026-03</span> 受邀担任 CVPR 2026 审稿人。</div>
+            <div class="scroll-item"><span class="news-date">2025-12</span> 获得国家奖学金（博士研究生）。</div>
+            <div class="scroll-item"><span class="news-date">2025-09</span> 参加 XXX 学术会议并做口头报告。</div>
+            <div class="scroll-item"><span class="news-date">2025-07</span> 一篇合作论文被 ICML 2025 接收。</div>
+            <div class="scroll-item"><span class="news-date">2025-05</span> 开源项目达到 500 stars。</div>
+            <div class="scroll-item"><span class="news-date">2025-01</span> 开始博士研究生学习。</div>
+            <!-- 继续添加更多新闻 ... -->
         </div>
     </section>
 
-    <!-- 一作论文 -->
+    <!-- 一作论文（可滚动框） -->
     <section class="section" id="first-author">
         <h2 class="section-heading">📄 一作论文</h2>
-        <div class="accordion">
-            <div class="accordion-item">
-                <button class="accordion-header" data-target="fa1">
-                    <span>论文标题示例一：Efficient Deep Learning...</span>
-                    <span class="accordion-arrow">▼</span>
-                </button>
-                <div class="accordion-body">
-                    <div class="paper-item">
-                        <div class="paper-title">论文标题示例一：Efficient Deep Learning for X</div>
-                        <div class="paper-meta">
-                            <span class="paper-category">NeurIPS 2026</span>
-                            <span>作者：<strong>你的姓名</strong>, 合作者A, 导师姓名</span>
-                        </div>
-                    </div>
+        <div class="scroll-card">
+            <div class="scroll-item">
+                <div class="paper-title">Efficient Deep Learning for X</div>
+                <div class="paper-meta">
+                    <span class="paper-category">NeurIPS 2026</span>
+                    <span><strong>张同顺</strong>, 合作者A, 导师姓名</span>
                 </div>
             </div>
-            <div class="accordion-item">
-                <button class="accordion-header" data-target="fa2">
-                    <span>论文标题示例二：Understanding Attention...</span>
-                    <span class="accordion-arrow">▼</span>
-                </button>
-                <div class="accordion-body">
-                    <div class="paper-item">
-                        <div class="paper-title">论文标题示例二：Understanding Attention in Y</div>
-                        <div class="paper-meta">
-                            <span class="paper-category">ICML 2025</span>
-                            <span>作者：<strong>你的姓名</strong>, 合作者B</span>
-                        </div>
-                    </div>
+            <div class="scroll-item">
+                <div class="paper-title">Understanding Attention in Y</div>
+                <div class="paper-meta">
+                    <span class="paper-category">ICML 2025</span>
+                    <span><strong>张同顺</strong>, 合作者B</span>
                 </div>
             </div>
+            <div class="scroll-item">
+                <div class="paper-title">Robust Feature Learning</div>
+                <div class="paper-meta">
+                    <span class="paper-category">CVPR 2024</span>
+                    <span><strong>张同顺</strong>, 合作者C, 导师姓名</span>
+                </div>
+            </div>
+            <!-- 继续添加更多论文，超出高度可滚动 -->
         </div>
     </section>
 
-    <!-- 合作论文 -->
+    <!-- 合作论文（可滚动框） -->
     <section class="section" id="coauthor">
         <h2 class="section-heading">📑 合作论文</h2>
-        <div class="accordion">
-            <div class="accordion-item">
-                <button class="accordion-header" data-target="co1">
-                    <span>合作论文标题一：Large-Scale Multi-Modal...</span>
-                    <span class="accordion-arrow">▼</span>
-                </button>
-                <div class="accordion-body">
-                    <div class="paper-item">
-                        <div class="paper-title">Large-Scale Multi-Modal Learning</div>
-                        <div class="paper-meta">
-                            <span class="paper-category">ACL 2025</span>
-                            <span>作者：合作者F, <strong>你的姓名</strong>, 合作者G</span>
-                        </div>
-                    </div>
+        <div class="scroll-card">
+            <div class="scroll-item">
+                <div class="paper-title">Large-Scale Multi-Modal Learning</div>
+                <div class="paper-meta">
+                    <span class="paper-category">ACL 2025</span>
+                    <span>合作者F, <strong>张同顺</strong>, 合作者G</span>
                 </div>
             </div>
+            <div class="scroll-item">
+                <div class="paper-title">Graph Neural Networks for Molecules</div>
+                <div class="paper-meta">
+                    <span class="paper-category">AAAI 2024</span>
+                    <span>合作者H, <strong>张同顺</strong>, 导师姓名</span>
+                </div>
+            </div>
+            <!-- 继续添加 ... -->
         </div>
     </section>
 
-    <!-- 审稿及服务 -->
+    <!-- 审稿及服务（非滚动，但也可以改成滚动卡片） -->
     <section class="section" id="service">
         <h2 class="section-heading">✉️ 审稿及服务</h2>
         <ul class="service-list">
-            <li>📝 <strong>审稿人：</strong>NeurIPS, ICML, CVPR, ACL, AAAI (2024-2026)</li>
-            <li>🎤 <strong>学术服务：</strong>担任XXX Workshop组织委员</li>
+            <li>📝 <strong>审稿人：</strong>NeurIPS, ICML, CVPR, ACL (2024-2026)</li>
+            <li>🎤 <strong>学术服务：</strong>担任 XXX Workshop 组织委员</li>
             <li>🏛️ <strong>教学助理：</strong>《机器学习》课程 (2024秋)</li>
         </ul>
     </section>
 
-    <!-- 专利 -->
+    <!-- 专利（可滚动框） -->
     <section class="section" id="patents">
         <h2 class="section-heading">💡 专利</h2>
-        <div class="accordion">
-            <div class="accordion-item">
-                <button class="accordion-header" data-target="pat1">
-                    <span>一种基于深度学习的图像识别方法</span>
-                    <span class="accordion-arrow">▼</span>
-                </button>
-                <div class="accordion-body">
-                    <div class="simple-item">
-                        <strong>专利号：</strong>CN2025XXXXX.X <br>
-                        <strong>类型：</strong>发明专利 · 已授权
-                    </div>
-                </div>
+        <div class="scroll-card">
+            <div class="scroll-item">
+                <strong>一种基于深度学习的图像识别方法</strong><br>
+                <span style="font-size:0.82rem; color:var(--text-muted);">专利号：CN2025XXXXX.X · 发明专利 · 已授权</span>
             </div>
+            <div class="scroll-item">
+                <strong>自然语言处理语义理解装置</strong><br>
+                <span style="font-size:0.82rem; color:var(--text-muted);">专利号：CN2024YYYYY.Y · 实用新型 · 已申请</span>
+            </div>
+            <!-- 继续添加 ... -->
         </div>
     </section>
 
-    <!-- 获奖 -->
+    <!-- 获奖（可滚动框） -->
     <section class="section" id="awards">
         <h2 class="section-heading">🏆 获奖</h2>
-        <div class="accordion">
-            <div class="accordion-item">
-                <button class="accordion-header" data-target="aw1">
-                    <span>🏅 国家奖学金（博士研究生）— 2025</span>
-                    <span class="accordion-arrow">▼</span>
-                </button>
-                <div class="accordion-body">
-                    <div class="simple-item">
-                        <strong>颁发单位：</strong>教育部 · 2025年12月
-                    </div>
-                </div>
+        <div class="scroll-card">
+            <div class="scroll-item">
+                🏅 <strong>国家奖学金（博士研究生）</strong> — 2025年12月
             </div>
+            <div class="scroll-item">
+                🥇 <strong>最佳论文奖</strong> — XXX国际会议 2024
+            </div>
+            <div class="scroll-item">
+                🥈 <strong>优秀毕业生</strong> — 吉林大学 2022
+            </div>
+            <!-- 继续添加 ... -->
         </div>
     </section>
 
@@ -417,29 +361,6 @@
 
 <script>
 (function() {
-    // 折叠面板逻辑
-    document.querySelectorAll('.accordion-header').forEach(btn => {
-        btn.addEventListener('click', function() {
-            const item = this.closest('.accordion-item');
-            const body = item.querySelector('.accordion-body');
-            const isOpen = item.classList.contains('open');
-            if (isOpen) {
-                item.classList.remove('open');
-                body.style.maxHeight = '0px';
-                this.setAttribute('aria-expanded', 'false');
-            } else {
-                item.classList.add('open');
-                body.style.maxHeight = body.scrollHeight + 'px';
-                this.setAttribute('aria-expanded', 'true');
-                const onEnd = () => {
-                    body.style.maxHeight = 'none';
-                    body.removeEventListener('transitionend', onEnd);
-                };
-                body.addEventListener('transitionend', onEnd);
-            }
-        });
-    });
-
     // 导航高亮
     const sections = document.querySelectorAll('.section');
     const navLinks = document.querySelectorAll('.sidebar-nav a');
