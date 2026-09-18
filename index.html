@@ -10,7 +10,7 @@
             font-family: "Times New Roman", Times, serif;
             background-color: #ffffff;
             color: #222222;
-            line-height: 1.3; /* 进一步缩小行高 */
+            line-height: 1.3; 
             font-size: 14px;
             margin: 0;
             padding: 0;
@@ -73,8 +73,8 @@
         h3.section-title {
             font-size: 18px;
             font-weight: bold;
-            margin-top: 15px;    /* 缩小标题上间距 */
-            margin-bottom: 6px;  /* 缩小标题下间距 */
+            margin-top: 15px;
+            margin-bottom: 6px;
             padding-bottom: 2px;
             border-bottom: 1px solid #cccccc;
             color: #000;
@@ -88,7 +88,7 @@
         }
 
         .news-list li {
-            margin-bottom: 1px; /* 极度紧凑 */
+            margin-bottom: 1px;
         }
 
         .news-date {
@@ -124,34 +124,35 @@
             color: #000;
         }
 
-        /* 论文底部元数据：级别与链接在同一行，加粗标蓝 */
+        /* 论文底部元数据：级别与链接同行，紧密排列 */
         .paper-meta {
             display: flex;
             justify-content: flex-start;
             align-items: center;
-            gap: 8px;
+            gap: 6px;
             flex-wrap: wrap;
             font-size: 13px;
-            margin-top: 2px;
+            margin-top: 1px; /* 紧贴作者信息 */
         }
 
+        /* 淡红色，与蓝色链接区分 */
         .paper-venue {
             font-weight: bold;
-            color: #0056b3; /* 标蓝 */
+            color: #c0392b; 
         }
 
         .paper-links a {
-            color: #0056b3; /* 标蓝 */
+            color: #0056b3; 
             text-decoration: none;
-            margin-right: 4px;
-            font-weight: bold; /* 加粗 */
+            margin-right: 2px;
+            font-weight: bold;
         }
 
         .paper-links a:hover {
             text-decoration: underline;
         }
 
-        /* 其他列表样式 (Service, Awards) */
+        /* 其他列表样式 (Reviewer, Awards) */
         .simple-list {
             list-style: none;
             padding: 0;
@@ -197,7 +198,7 @@
     <!-- News -->
     <h3 class="section-title" id="news">News</h3>
     <ul class="news-list">
-        <li><span class="news-date">09/2026</span> 顺利通过博士答辩了！</li>
+        <li><span class="news-date">09/2026</span> Successfully passed my Ph.D. defense!</li>
         <li><span class="news-date">07/2026</span> 1 paper accepted to INFFUS!</li>
         <li><span class="news-date">06/2026</span> 2 papers accepted to IJCAI and TCSVT!</li>
         <li><span class="news-date">02/2026</span> 3 papers accepted to ESWA, TGRS and KBS!</li>
@@ -399,7 +400,7 @@
         <li><strong>Reviewer for:</strong> AAAI, ACM MM, TMM, TIP, ICML, NIPS, IJCAI, INFFUS, ESWA, KBS, PR, TCSVT, CVIU, IJCV, TNNLS, IET Image processing, SIVP</li>
     </ul>
 
-    <!-- Awards (原 Invited Talk 和 Academic Service 已按要求合并至此并简写) -->
+    <!-- Awards -->
     <h3 class="section-title" id="awards">Awards & Achievements</h3>
     <ul class="simple-list">
         <li><strong>National Scholarship</strong> — 10/2025</li>
