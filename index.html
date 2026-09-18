@@ -106,9 +106,10 @@
             border-radius: 2px;
         }
 
+        /* 取消论文标题加粗 */
         .paper-title {
-            font-weight: bold;
-            color: #000;
+            font-weight: normal; /* 取消加粗 */
+            color: #222;
             margin-bottom: 1px;
             font-size: 14.5px;
         }
@@ -119,12 +120,13 @@
             margin-bottom: 2px;
         }
 
+        /* 你的名字改为橙色 */
         .paper-authors strong {
             font-weight: bold;
-            color: #000;
+            color: #d35400; /* 橙色 */
         }
 
-        /* 论文底部元数据：级别与链接同行，紧密排列 */
+        /* 论文底部元数据：级别与链接同行 */
         .paper-meta {
             display: flex;
             justify-content: flex-start;
@@ -132,15 +134,16 @@
             gap: 6px;
             flex-wrap: wrap;
             font-size: 13px;
-            margin-top: 1px; /* 紧贴作者信息 */
+            margin-top: 1px;
         }
 
-        /* 淡红色，与蓝色链接区分 */
+        /* 级别用淡红色 */
         .paper-venue {
             font-weight: bold;
             color: #c0392b; 
         }
 
+        /* PDF链接用蓝色 */
         .paper-links a {
             color: #0056b3; 
             text-decoration: none;
