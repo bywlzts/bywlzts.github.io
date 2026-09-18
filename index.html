@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tongshun Zhang - Homepage</title>
     <style>
-        /* 全局设定：新罗马字体，紧凑排版 */
+        /* 全局设定：新罗马字体，极度紧凑排版 */
         body {
             font-family: "Times New Roman", Times, serif;
             background-color: #ffffff;
             color: #222222;
-            line-height: 1.35; /* 大幅缩小行高 */
-            font-size: 14px;   /* 缩小基础字号 */
+            line-height: 1.3; /* 进一步缩小行高 */
+            font-size: 14px;
             margin: 0;
             padding: 0;
         }
@@ -20,22 +20,22 @@
         .container {
             max-width: 900px;
             margin: 0 auto;
-            padding: 30px 20px;
+            padding: 25px 20px;
         }
 
-        /* 个人信息区域 (Flex 布局) */
+        /* 个人信息区域 */
         .profile-section {
             display: flex;
             align-items: flex-start;
             gap: 20px;
-            margin-bottom: 20px;
+            margin-bottom: 15px;
         }
 
         .profile-photo {
             width: 150px;
             height: auto;
             object-fit: cover;
-            border-radius: 3px;
+            border-radius: 2px;
         }
 
         .profile-info h1 {
@@ -52,17 +52,17 @@
         }
 
         .profile-info p {
-            margin: 0 0 6px 0;
+            margin: 0 0 4px 0;
         }
 
         .profile-links {
-            margin-top: 6px;
+            margin-top: 5px;
         }
 
         .profile-links a {
             color: #0056b3;
             text-decoration: none;
-            margin-right: 12px;
+            margin-right: 10px;
         }
 
         .profile-links a:hover {
@@ -73,9 +73,9 @@
         h3.section-title {
             font-size: 18px;
             font-weight: bold;
-            margin-top: 20px;    /* 缩小标题上间距 */
-            margin-bottom: 8px;  /* 缩小标题下间距 */
-            padding-bottom: 3px;
+            margin-top: 15px;    /* 缩小标题上间距 */
+            margin-bottom: 6px;  /* 缩小标题下间距 */
+            padding-bottom: 2px;
             border-bottom: 1px solid #cccccc;
             color: #000;
         }
@@ -88,35 +88,35 @@
         }
 
         .news-list li {
-            margin-bottom: 2px; /* 极度紧凑 */
+            margin-bottom: 1px; /* 极度紧凑 */
         }
 
         .news-date {
             font-weight: bold;
-            margin-right: 8px;
+            margin-right: 6px;
             color: #333;
         }
 
-        /* 论文列表容器 - 浅灰背景，内边距极小 */
+        /* 论文列表容器 - 浅灰背景，极小内边距 */
         .paper-item {
             background-color: #fafafa; 
-            border: 1px solid #f0f0f0; 
-            padding: 6px 10px; /* 大幅减少上下内边距 */
-            margin-bottom: 6px; /* 论文块之间的间距极小 */
+            border: 1px solid #eeeeee; 
+            padding: 5px 10px; 
+            margin-bottom: 5px; 
             border-radius: 2px;
         }
 
         .paper-title {
             font-weight: bold;
             color: #000;
-            margin-bottom: 1px; /* 标题与作者紧贴 */
+            margin-bottom: 1px;
             font-size: 14.5px;
         }
 
         .paper-authors {
             color: #444;
             font-size: 13px;
-            margin-bottom: 2px; /* 作者与底部一行紧贴 */
+            margin-bottom: 2px;
         }
 
         .paper-authors strong {
@@ -124,32 +124,34 @@
             color: #000;
         }
 
-        /* 底部一行：包含级别和链接 */
-        .paper-footer {
+        /* 论文底部元数据：级别与链接在同一行，加粗标蓝 */
+        .paper-meta {
             display: flex;
             justify-content: flex-start;
             align-items: center;
             gap: 8px;
             flex-wrap: wrap;
             font-size: 13px;
+            margin-top: 2px;
         }
 
-        .paper-venue strong {
+        .paper-venue {
             font-weight: bold;
-            color: #000;
+            color: #0056b3; /* 标蓝 */
         }
 
         .paper-links a {
-            color: #0056b3;
+            color: #0056b3; /* 标蓝 */
             text-decoration: none;
-            margin-right: 6px;
+            margin-right: 4px;
+            font-weight: bold; /* 加粗 */
         }
 
         .paper-links a:hover {
             text-decoration: underline;
         }
 
-        /* 其他列表样式 (Service, Patents, Awards) */
+        /* 其他列表样式 (Service, Awards) */
         .simple-list {
             list-style: none;
             padding: 0;
@@ -157,13 +159,13 @@
         }
 
         .simple-list li {
-            margin-bottom: 3px; /* 列表间距收紧 */
+            margin-bottom: 2px;
             font-size: 13.5px;
         }
 
         .simple-list li::before {
             content: "•";
-            margin-right: 6px;
+            margin-right: 5px;
             color: #555;
         }
     </style>
@@ -177,12 +179,12 @@
         <img src="person_photo.png" alt="Tongshun Zhang" class="profile-photo" onerror="this.style.display='none'">
         
         <div class="profile-info">
-            <h1>Tongshun Zhang</h1>
+            <h1>Tongshun Zhang (张同顺)</h1>
             <h2>Ph.D. Candidate</h2>
             <p>College of Computer Science and Technology<br>
                Jilin University</p>
             <p>Email: tszhang23@mails.jlu.edu.cn / bywl_zts@163.com</p>
-            <p style="text-align: justify; margin-top: 8px;">
+            <p style="text-align: justify; margin-top: 6px;">
                 I am currently pursuing a Ph.D. in the College of Computer Science and Technology at Jilin University (09/2023–present). My primary research focuses on <strong>Low-Level Vision</strong>, particularly <strong>Low-Light Image Enhancement (LLIE)</strong> (essential for robustness in real-world vision systems). For collaborations or inquiries, please feel free to contact me via email.
             </p>
             <div class="profile-links">
@@ -195,16 +197,17 @@
     <!-- News -->
     <h3 class="section-title" id="news">News</h3>
     <ul class="news-list">
-        <li><span class="news-date">Jul 2026</span> 1 paper accepted to INFFUS!</li>
-        <li><span class="news-date">Jun 2026</span> 2 papers accepted to IJCAI and TCSVT!</li>
-        <li><span class="news-date">Feb 2026</span> 3 papers accepted to ESWA, TGRS and KBS!</li>
-        <li><span class="news-date">Nov 2025</span> 2 papers accepted to AAAI 2026!</li>
-        <li><span class="news-date">Sep 2025</span> 2 papers accepted to ESWA!</li>
-        <li><span class="news-date">Jul 2025</span> 1 paper accepted to ICCV 2025!</li>
-        <li><span class="news-date">Jun 2025</span> 1 paper accepted to ESWA!</li>
-        <li><span class="news-date">May 2025</span> 1 paper accepted to INFFUS!</li>
-        <li><span class="news-date">Mar 2025</span> 1 paper accepted to ICME 2025 (Oral)!</li>
-        <li><span class="news-date">Jul 2024</span> 1 paper accepted to ACM MM 2024 (Oral)!</li>
+        <li><span class="news-date">09/2026</span> 顺利通过博士答辩了！</li>
+        <li><span class="news-date">07/2026</span> 1 paper accepted to INFFUS!</li>
+        <li><span class="news-date">06/2026</span> 2 papers accepted to IJCAI and TCSVT!</li>
+        <li><span class="news-date">02/2026</span> 3 papers accepted to ESWA, TGRS and KBS!</li>
+        <li><span class="news-date">11/2025</span> 2 papers accepted to AAAI 2026!</li>
+        <li><span class="news-date">09/2025</span> 2 papers accepted to ESWA!</li>
+        <li><span class="news-date">07/2025</span> 1 paper accepted to ICCV 2025!</li>
+        <li><span class="news-date">06/2025</span> 1 paper accepted to ESWA!</li>
+        <li><span class="news-date">05/2025</span> 1 paper accepted to INFFUS!</li>
+        <li><span class="news-date">03/2025</span> 1 paper accepted to ICME 2025 (Oral)!</li>
+        <li><span class="news-date">07/2024</span> 1 paper accepted to ACM MM 2024 (Oral)!</li>
     </ul>
 
     <!-- First-Author Papers -->
@@ -213,8 +216,8 @@
     <div class="paper-item">
         <div class="paper-title">A Physically-Grounded Attack and Adaptive Defense Framework for Real-World Low-Light Image Enhancement</div>
         <div class="paper-authors"><strong>Tongshun Zhang</strong>, Pingping Liu*, Yuqing Lei, Zixuan Zhong, Qiuzhan Zhou, Zhiyuan Zha</div>
-        <div class="paper-footer">
-            <span class="paper-venue"><strong>arXiv 2026</strong></span>
+        <div class="paper-meta">
+            <span class="paper-venue">arXiv 2026</span>
             <span class="paper-links"><a href="https://arxiv.org/abs/2603.14304" target="_blank">[PDF]</a> <a href="https://github.com/bywlzts/Attack-defense-llie" target="_blank">[Code]</a></span>
         </div>
     </div>
@@ -222,16 +225,16 @@
     <div class="paper-item">
         <div class="paper-title">Enhanced Fourier-based Network for Low-Light Image Enhancement</div>
         <div class="paper-authors"><strong>Tongshun Zhang</strong>, JiaQi Zhang, Pingping Liu*, Qiuzhan Zhou</div>
-        <div class="paper-footer">
-            <span class="paper-venue"><strong>INFFUS 2026 (SCI-1)</strong></span>
+        <div class="paper-meta">
+            <span class="paper-venue">INFFUS 2026 (SCI-1)</span>
         </div>
     </div>
 
     <div class="paper-item">
         <div class="paper-title">SPJFNet: Self-Mining Prior-Guided Joint Frequency Enhancement for Ultra-Efficient Dark Image Restoration</div>
         <div class="paper-authors"><strong>Tongshun Zhang</strong>, Pingping Liu*, Zijian Zhang, Qiuzhan Zhou</div>
-        <div class="paper-footer">
-            <span class="paper-venue"><strong>AAAI 2026 (CCF-A)</strong></span>
+        <div class="paper-meta">
+            <span class="paper-venue">AAAI 2026 (CCF-A)</span>
             <span class="paper-links"><a href="https://ojs.aaai.org/index.php/AAAI/article/view/38277" target="_blank">[PDF]</a> <a href="https://github.com/bywlzts/SPJFNet" target="_blank">[Code]</a></span>
         </div>
     </div>
@@ -239,8 +242,8 @@
     <div class="paper-item">
         <div class="paper-title">Beyond Illumination: Fine-Grained Detail Preservation in Extreme Dark Image Restoration</div>
         <div class="paper-authors"><strong>Tongshun Zhang</strong>, Pingping Liu*, Zixuan Zhong, Zijian Zhang, Qiuzhan Zhou</div>
-        <div class="paper-footer">
-            <span class="paper-venue"><strong>AAAI 2026 (CCF-A)</strong></span>
+        <div class="paper-meta">
+            <span class="paper-venue">AAAI 2026 (CCF-A)</span>
             <span class="paper-links"><a href="https://ojs.aaai.org/index.php/AAAI/article/view/38276" target="_blank">[PDF]</a> <a href="https://github.com/bywlzts/RFGM" target="_blank">[Code]</a></span>
         </div>
     </div>
@@ -248,8 +251,8 @@
     <div class="paper-item">
         <div class="paper-title">CIVQLLIE: Causal Intervention with Vector Quantization for Low-Light Image Enhancement</div>
         <div class="paper-authors"><strong>Tongshun Zhang</strong>, Pingping Liu*, Zhe Zhang, Qiuzhan Zhou</div>
-        <div class="paper-footer">
-            <span class="paper-venue"><strong>arXiv 2025</strong></span>
+        <div class="paper-meta">
+            <span class="paper-venue">arXiv 2025</span>
             <span class="paper-links"><a href="https://arxiv.org/abs/2508.03338" target="_blank">[PDF]</a> <a href="https://github.com/bywlzts/CIVQLLIE" target="_blank">[Code]</a></span>
         </div>
     </div>
@@ -257,8 +260,8 @@
     <div class="paper-item">
         <div class="paper-title">BSMamba: Brightness and Semantic Modeling for Long-Range Interaction in Low-Light Image Enhancement</div>
         <div class="paper-authors"><strong>Tongshun Zhang</strong>, Pingping Liu*, Mengen Cai, Zijian Zhang, Yubing Lu, Qiuzhan Zhou</div>
-        <div class="paper-footer">
-            <span class="paper-venue"><strong>arXiv 2025</strong></span>
+        <div class="paper-meta">
+            <span class="paper-venue">arXiv 2025</span>
             <span class="paper-links"><a href="https://arxiv.org/abs/2506.18346" target="_blank">[PDF]</a> <a href="https://github.com/bywlzts/BSMamba" target="_blank">[Code]</a></span>
         </div>
     </div>
@@ -266,8 +269,8 @@
     <div class="paper-item">
         <div class="paper-title">CWNet: Causal Wavelet Network for Low-Light Image Enhancement</div>
         <div class="paper-authors"><strong>Tongshun Zhang</strong>, Pingping Liu*, Yubing Lu, Mengen Cai, Zijian Zhang, Zhe Zhang, Qiuzhan Zhou</div>
-        <div class="paper-footer">
-            <span class="paper-venue"><strong>ICCV 2025 (CCF-A)</strong></span>
+        <div class="paper-meta">
+            <span class="paper-venue">ICCV 2025 (CCF-A)</span>
             <span class="paper-links"><a href="https://openaccess.thecvf.com/content/ICCV2025/html/Zhang_CWNet_Causal_Wavelet_Network_for_Low-Light_Image_Enhancement_ICCV_2025_paper.html" target="_blank">[PDF]</a> <a href="https://github.com/bywlzts/CWNet-Causal-Wavelet-Network" target="_blank">[Code]</a></span>
         </div>
     </div>
@@ -275,8 +278,8 @@
     <div class="paper-item">
         <div class="paper-title">DMFourLLIE: Dual-Stage and Multi-Branch Fourier Network for Low-Light Image Enhancement</div>
         <div class="paper-authors"><strong>Tongshun Zhang</strong>, Pingping Liu*, Ming Zhao, Haotian Lv</div>
-        <div class="paper-footer">
-            <span class="paper-venue"><strong>ACM MM 2024 (CCF-A)</strong></span>
+        <div class="paper-meta">
+            <span class="paper-venue">ACM MM 2024 (CCF-A)</span>
             <span class="paper-links"><a href="https://arxiv.org/abs/2412.00683" target="_blank">[PDF]</a> <a href="https://github.com/bywlzts/DMFourLLIE" target="_blank">[Code]</a></span>
         </div>
     </div>
@@ -284,8 +287,8 @@
     <div class="paper-item">
         <div class="paper-title">Cross-modal guided and refinement-enhanced Retinex network for robust low-light image enhancement</div>
         <div class="paper-authors"><strong>Tongshun Zhang</strong>, Pingping Liu*, Mengen Cai, Xiaoyi Wang, Qiuzhan Zhou</div>
-        <div class="paper-footer">
-            <span class="paper-venue"><strong>INFFUS 2025 (SCI-1)</strong></span>
+        <div class="paper-meta">
+            <span class="paper-venue">INFFUS 2025 (SCI-1)</span>
             <span class="paper-links"><a href="https://www.sciencedirect.com/science/article/abs/pii/S1566253525004531" target="_blank">[PDF]</a> <a href="https://github.com/bywlzts/CMRetinexNet" target="_blank">[Code]</a></span>
         </div>
     </div>
@@ -293,8 +296,8 @@
     <div class="paper-item">
         <div class="paper-title">APMoE-Net: Fourier Amplitude-Phase Joint Enhancement and MoE Compensation for Low-Light Image Enhancement</div>
         <div class="paper-authors">Mengen Cai, <strong>Tongshun Zhang</strong>†, Pingping Liu*, Qiuzhan Zhou</div>
-        <div class="paper-footer">
-            <span class="paper-venue"><strong>ESWA 2025 (SCI-1)</strong></span>
+        <div class="paper-meta">
+            <span class="paper-venue">ESWA 2025 (SCI-1)</span>
             <span class="paper-links"><a href="https://www.sciencedirect.com/science/article/abs/pii/S0957417425032798" target="_blank">[PDF]</a> <a href="https://github.com/user-cai/ESWA2025-APMoENet" target="_blank">[Code]</a></span>
         </div>
     </div>
@@ -305,24 +308,24 @@
     <div class="paper-item">
         <div class="paper-title">FreSH: Frequency-Segmented Hierarchical Multi-Expert Framework for Multivariate Time Series Classification</div>
         <div class="paper-authors">Pingping Liu, Muyao Wang, Zijian Zhang, <strong>Tongshun Zhang</strong>, Hao Miao, Guorui Xie, Qingliang Li, Qiuzhan Zhou</div>
-        <div class="paper-footer">
-            <span class="paper-venue"><strong>IJCAI 2026 (CCF-B)</strong></span>
+        <div class="paper-meta">
+            <span class="paper-venue">IJCAI 2026 (CCF-B)</span>
         </div>
     </div>
 
     <div class="paper-item">
         <div class="paper-title">HyperISTD: Angular-Consistent Modeling in Hyperbolic Space for Infrared Small Target Detection</div>
         <div class="paper-authors">Yubing Lu, Pingping Liu*, <strong>Tongshun Zhang</strong>, Aohua Li, Qiuzhan Zhou</div>
-        <div class="paper-footer">
-            <span class="paper-venue"><strong>TCSVT 2026 (SCI-1)</strong></span>
+        <div class="paper-meta">
+            <span class="paper-venue">TCSVT 2026 (SCI-1)</span>
         </div>
     </div>
 
     <div class="paper-item">
         <div class="paper-title">Synergistic Mamba: Mastering Global Frequency and Local Spatial Contexts for Low-light Image Enhancement</div>
         <div class="paper-authors">Shijun Fu, Pingping Liu*, <strong>Tongshun Zhang</strong>, Hongwei Zhao, Qiuzhan Zhou</div>
-        <div class="paper-footer">
-            <span class="paper-venue"><strong>ESWA 2026 (SCI-1)</strong></span>
+        <div class="paper-meta">
+            <span class="paper-venue">ESWA 2026 (SCI-1)</span>
             <span class="paper-links"><a href="https://www.sciencedirect.com/science/article/pii/S0957417425045610" target="_blank">[PDF]</a> <a href="https://github.com/cookfu/Synergistic_Mamba.git" target="_blank">[Code]</a></span>
         </div>
     </div>
@@ -330,8 +333,8 @@
     <div class="paper-item">
         <div class="paper-title">Physics-Driven Feature Decoupling for Infrared Small Targets: A Dual Geometry-Guided Experts Network</div>
         <div class="paper-authors">Yubing Lu, Pingping Liu*, <strong>Tongshun Zhang</strong>, Aohua Li, Qiuzhan Zhou</div>
-        <div class="paper-footer">
-            <span class="paper-venue"><strong>KBS 2026 (SCI-1)</strong></span>
+        <div class="paper-meta">
+            <span class="paper-venue">KBS 2026 (SCI-1)</span>
             <span class="paper-links"><a href="https://www.sciencedirect.com/science/article/abs/pii/S0950705126000122" target="_blank">[PDF]</a></span>
         </div>
     </div>
@@ -339,8 +342,8 @@
     <div class="paper-item">
         <div class="paper-title">PQGNet: Perceptual Query Guided Network for Infrared Small Target Detection</div>
         <div class="paper-authors">Pingping Liu*, Aohua Li, Yubing Lu, <strong>Tongshun Zhang</strong>, Ming Yang, Qiuzhan Zhou</div>
-        <div class="paper-footer">
-            <span class="paper-venue"><strong>TGRS 2026 (SCI-1)</strong></span>
+        <div class="paper-meta">
+            <span class="paper-venue">TGRS 2026 (SCI-1)</span>
             <span class="paper-links"><a href="https://ieeexplore.ieee.org/document/11352975" target="_blank">[PDF]</a></span>
         </div>
     </div>
@@ -348,8 +351,8 @@
     <div class="paper-item">
         <div class="paper-title">SpineBench: A Clinically Salient, Level-Aware Benchmark Powered by the SpineMed-450k Corpus</div>
         <div class="paper-authors">Ming Zhao, Pingping Liu, <strong>Tongshun Zhang</strong>, et al.</div>
-        <div class="paper-footer">
-            <span class="paper-venue"><strong>ICLR 2026 (CCF-A)</strong></span>
+        <div class="paper-meta">
+            <span class="paper-venue">ICLR 2026 (CCF-A)</span>
             <span class="paper-links"><a href="https://arxiv.org/abs/2510.03160" target="_blank">[PDF]</a></span>
         </div>
     </div>
@@ -357,8 +360,8 @@
     <div class="paper-item">
         <div class="paper-title">Differentiable histogram-guided unsupervised Retinex enhancement for paired low-light images</div>
         <div class="paper-authors">Liyuan Yin, Pingping Liu*, <strong>Tongshun Zhang</strong>, Hongwei Zhao, Qiuzhan Zhou</div>
-        <div class="paper-footer">
-            <span class="paper-venue"><strong>ESWA 2025 (SCI-1)</strong></span>
+        <div class="paper-meta">
+            <span class="paper-venue">ESWA 2025 (SCI-1)</span>
             <span class="paper-links"><a href="https://www.sciencedirect.com/science/article/abs/pii/S0957417425033974" target="_blank">[PDF]</a> <a href="https://github.com/yoonyin/DHURE-main" target="_blank">[Code]</a></span>
         </div>
     </div>
@@ -366,26 +369,17 @@
     <div class="paper-item">
         <div class="paper-title">Multi-modal fusion guided retinex-based low-light image enhancement</div>
         <div class="paper-authors">Pingping Liu*, Xiaoyi Wang, <strong>Tongshun Zhang</strong>, Liyuan Yin</div>
-        <div class="paper-footer">
-            <span class="paper-venue"><strong>ESWA 2025 (SCI-1)</strong></span>
+        <div class="paper-meta">
+            <span class="paper-venue">ESWA 2025 (SCI-1)</span>
             <span class="paper-links"><a href="https://www.sciencedirect.com/science/article/abs/pii/S0957417425022729" target="_blank">[PDF]</a></span>
-        </div>
-    </div>
-
-    <div class="paper-item">
-        <div class="paper-title">WEC-DG: Multi-Exposure Wavelet Correction Method Guided by Degradation Description</div>
-        <div class="paper-authors">Ming Zhao, Pingping Liu*, <strong>Tongshun Zhang</strong>, Zhe Zhang</div>
-        <div class="paper-footer">
-            <span class="paper-venue"><strong>arXiv 2025</strong></span>
-            <span class="paper-links"><a href="https://arxiv.org/pdf/2508.09565" target="_blank">[PDF]</a></span>
         </div>
     </div>
 
     <div class="paper-item">
         <div class="paper-title">ReF-LLE: Personalized Low-Light Enhancement via Reference-Guided Deep Reinforcement Learning</div>
         <div class="paper-authors">Ming Zhao, Pingping Liu*, <strong>Tongshun Zhang</strong>, Zhe Zhang</div>
-        <div class="paper-footer">
-            <span class="paper-venue"><strong>ICME 2025 (CCF-B)</strong></span>
+        <div class="paper-meta">
+            <span class="paper-venue">ICME 2025 (CCF-B)</span>
             <span class="paper-links"><a href="https://arxiv.org/abs/2506.22216" target="_blank">[PDF]</a></span>
         </div>
     </div>
@@ -393,42 +387,31 @@
     <div class="paper-item">
         <div class="paper-title">Adaptive illumination and noise-free detail recovery via visual decomposition for low-light image enhancement</div>
         <div class="paper-authors">Pingping Liu*, Tianqi Li, Qiuzhan Zhou, <strong>Tongshun Zhang</strong></div>
-        <div class="paper-footer">
-            <span class="paper-venue"><strong>CVIU 2025 (CCF-B)</strong></span>
+        <div class="paper-meta">
+            <span class="paper-venue">CVIU 2025 (CCF-B)</span>
             <span class="paper-links"><a href="https://www.sciencedirect.com/science/article/abs/pii/S1077314225001894" target="_blank">[PDF]</a></span>
         </div>
     </div>
 
-    <!-- Reviewer & Service -->
-    <h3 class="section-title" id="service">Reviewer & Service</h3>
+    <!-- Reviewer -->
+    <h3 class="section-title" id="service">Reviewer</h3>
     <ul class="simple-list">
         <li><strong>Reviewer for:</strong> AAAI, ACM MM, TMM, TIP, ICML, NIPS, IJCAI, INFFUS, ESWA, KBS, PR, TCSVT, CVIU, IJCV, TNNLS, IET Image processing, SIVP</li>
-        <li><strong>Invited Talk:</strong> Lightweight reconstruction for low-light enhancement at Xiangnan University (Sep 2025)</li>
-        <li><strong>Academic Service:</strong> Poster presentation at Valse 2025; Academic research report at Jilin University 2024</li>
     </ul>
 
-    <!-- Patents -->
-    <h3 class="section-title" id="patents">Patents</h3>
-    <ul class="simple-list">
-        <li>Method and System for Constructing Exposure Bias Enhancement Network Model for Unsupervised Exposure Correction (CN120318103B · 2025)</li>
-        <li>Low-Light Image Enhancement Method, System, Device and Storage Medium (CN119090751B · 2025)</li>
-        <li>Low-Light Image Enhancement Method and System (CN119379551B · 2025)</li>
-        <li>Low-Light Image Enhancement Method, System, Device and Storage Medium (CN120374475A · 2025)</li>
-        <li>Generative Low-Illumination Image Enhancement Method Based on Retinex Constraints (CN120495108A · 2025)</li>
-    </ul>
-
-    <!-- Awards -->
+    <!-- Awards (原 Invited Talk 和 Academic Service 已按要求合并至此并简写) -->
     <h3 class="section-title" id="awards">Awards & Achievements</h3>
     <ul class="simple-list">
-        <li><strong>National Scholarship</strong> — Oct 2025</li>
-        <li><strong>Invited Lecture</strong> at Xiangnan University on lightweight low-light enhancement — Sep 2025</li>
-        <li><strong>2024-2025 Graduate Outstanding Scholarship</strong> — Sep 2025</li>
-        <li><strong>2024-2025 Outstanding Graduate Student</strong> — Sep 2025</li>
-        <li><strong>China FAW Group Scholarship</strong> — Sep 2025</li>
-        <li><strong>DMFourLLIE selected for poster presentation at Valse 2025</strong> — Apr 2025</li>
-        <li><strong>DMFourLLIE selected for Academic Research and Discussion report at Jilin University</strong> — Nov 2024</li>
-        <li><strong>2023-2024 Graduate Outstanding Scholarship</strong> — Oct 2024</li>
-        <li><strong>2023-2024 Outstanding Graduate Student</strong> — Oct 2024</li>
+        <li><strong>National Scholarship</strong> — 10/2025</li>
+        <li><strong>China FAW Group Scholarship</strong> — 09/2025</li>
+        <li><strong>2024-2025 Graduate Outstanding Scholarship</strong> — 09/2025</li>
+        <li><strong>2024-2025 Outstanding Graduate Student</strong> — 09/2025</li>
+        <li><strong>Invited Talk at Xiangnan University</strong> — 09/2025</li>
+        <li><strong>Academic Service:</strong> Valse 2025 Poster & JLU 2024 Report</li>
+        <li><strong>DMFourLLIE selected for poster presentation at Valse 2025</strong> — 04/2025</li>
+        <li><strong>DMFourLLIE selected for Academic Research and Discussion report at Jilin University</strong> — 11/2024</li>
+        <li><strong>2023-2024 Graduate Outstanding Scholarship</strong> — 10/2024</li>
+        <li><strong>2023-2024 Outstanding Graduate Student</strong> — 10/2024</li>
     </ul>
 
 </div>
